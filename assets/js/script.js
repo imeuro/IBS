@@ -1,5 +1,6 @@
 // Carosello Hero Background
 const heroImages = document.querySelectorAll('.hero__img');
+const heroQuotes = document.querySelectorAll('.hero__single-quote');
 let current = 0;
 const interval = 5000;
 
@@ -15,10 +16,25 @@ const showImage = (idx) => {
   });
 };
 
-setInterval(() => {
+const showQuote = (idx) => {
+  if (!heroQuotes.length) return;
+  heroQuotes.forEach((q, i) => {
+    if (i === idx) {
+      q.classList.add('is-active');
+    } else {
+      q.classList.remove('is-active');
+    }
+  });
+};
+
+const updateHeroCarousel = () => {
   current = (current + 1) % heroImages.length;
   showImage(current);
-}, interval);
+  showQuote(current);
+};
 
-// Mostra la prima immagine all'avvio
-showImage(current); 
+setInterval(updateHeroCarousel, interval);
+
+// Mostra la prima immagine e la prima frase all'avvio
+showImage(current);
+showQuote(current); 
