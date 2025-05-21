@@ -58,8 +58,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .header__logo {
@@ -130,7 +131,6 @@ body {
   min-height: 320px;
   overflow: hidden;
 }
-
 .hero__carousel {
   position: absolute;
   inset: 0;
@@ -165,11 +165,19 @@ body {
   z-index: 1;
   pointer-events: none;
 }
-
+.hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
 .hero__quotes-wrapper {
   position: relative;
   min-height: 2.5em;
   width: 100%;
+  max-width: 800px;
 }
 
 .hero__single-quote {
@@ -396,13 +404,6 @@ body {
   font-family: 'EB Garamond', Garamond, serif;
 }
 
-
-
-
-
-
-
-
 /* =====================
    Responsive Design
    ===================== */
@@ -426,13 +427,17 @@ body {
   .hero__quote {
     font-size: 3rem;
     line-height: 3rem;
-    max-width: 1000px;
+    max-width: 800px;
     font-family: 'EB Garamond', Garamond, serif;
+    text-align: left;
   }
 
-  .hero__quote p {
-    margin-bottom: 1rem;
+  .hero__single-quote {
+    font-size: 3rem;
+    line-height: 3rem;
+    max-width: 800px;
   }
+
   .hero small {
     display: block;
     font-size: 14px;
@@ -495,10 +500,6 @@ body {
 @media (min-width: 1000px) {
   .header__container {
     max-width: 1200px;
-  }
-  .hero__single-quote {
-    font-size: 3rem;
-    line-height: 3rem;
   }
   .section,
   .footer {
