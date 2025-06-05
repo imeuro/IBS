@@ -131,6 +131,7 @@ body {
   min-height: 320px;
   overflow: hidden;
 }
+.hero__title { opacity: 0; }
 .hero__carousel {
   position: absolute;
   inset: 0;
