@@ -31,7 +31,11 @@
   <meta name="twitter:description" content="Soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs.">
   <meta name="twitter:image" content="https://www.ibslab.eu/assets/img/IBS_logo.png">
   
-  <!-- Performance Optimizations -->
+  <link rel="preload" as="image" href="assets/img/hero/hero1.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/IBS_logo.png" fetchpriority="high">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=EB+Garamond:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet"></noscript>
 
@@ -102,15 +106,15 @@
 <body>
   <div class="topbar" aria-label="Selezione lingua">
     <div class="topbar__lang">
-        <a href="/en" title="Switch to English version" tabindex="0" hreflang="en"><img src="https://hatscripts.github.io/circle-flags/flags/uk.svg" alt="English flag" title="English" tabindex="0" width="24" height="24"></a>
-        <a href="/" title="Versione italiana" tabindex="0" hreflang="it"><img src="https://hatscripts.github.io/circle-flags/flags/it.svg" alt="Bandiera italiana" title="Italiano" tabindex="0" width="24" height="24"></a>
-        <a href="/es" title="Cambiar a versión en español" tabindex="0" hreflang="es"><img src="https://hatscripts.github.io/circle-flags/flags/es.svg" alt="Bandera española" title="Español" tabindex="0" width="24" height="24"></a>
+        <a href="/en" title="Switch to English version" tabindex="0" hreflang="en"><img src="https://hatscripts.github.io/circle-flags/flags/uk.svg" alt="English flag" title="English" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
+        <a href="/" title="Versione italiana" tabindex="0" hreflang="it"><img src="https://hatscripts.github.io/circle-flags/flags/it.svg" alt="Bandiera italiana" title="Italiano" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
+        <a href="/es" title="Cambiar a versión en español" tabindex="0" hreflang="es"><img src="https://hatscripts.github.io/circle-flags/flags/es.svg" alt="Bandera española" title="Español" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
     </div>
   </div>
   
   <header class="header" role="banner">
     <div class="header__container">
-      <h1 class="header__title"><img src="assets/img/IBS_logo.png" alt="Logo IBS Lab - Innovative Banking Solutions" class="header__logo" tabindex="0" width="200" height="80"></h1>
+      <h1 class="header__title"><img src="assets/img/IBS_logo.png" alt="Logo IBS Lab - Innovative Banking Solutions" class="header__logo" tabindex="0" width="200" height="80" fetchpriority="high" decoding="sync"></h1>
       <nav class="header__nav" aria-label="Navigazione principale">
         <!-- <ul class="nav__list">
           <li><a href="#soluzioni" tabindex="0">soluzioni</a></li>
@@ -126,9 +130,9 @@
     <!-- Hero Section -->
     <section class="hero" aria-label="Citazione principale">
       <div class="hero__carousel" aria-hidden="true">
-        <img src="assets/img/hero/hero1.jpg" class="hero__img is-active" alt="" aria-hidden="true" loading="eager">
-        <img src="assets/img/hero/hero2.jpg" class="hero__img" alt="" aria-hidden="true" loading="lazy">
-        <img src="assets/img/hero/hero3.jpg" class="hero__img" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/img/hero/hero1.jpg" class="hero__img is-active" alt="" aria-hidden="true" loading="eager" fetchpriority="high" decoding="sync">
+        <img src="assets/img/hero/hero2.jpg" class="hero__img" alt="" aria-hidden="true" loading="lazy" decoding="async">
+        <img src="assets/img/hero/hero3.jpg" class="hero__img" alt="" aria-hidden="true" loading="lazy" decoding="async">
       </div>
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="hero__container">
@@ -166,7 +170,7 @@
         </ul>
 
         <div class="section__partner">
-          <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Visita il sito di Kore Labs"><img src="assets/img/kore_logo.svg" alt="Logo Kore Labs - Partner tecnologico" class="section__partner-logo" width="150" height="60" loading="lazy"></a>
+          <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Visita il sito di Kore Labs"><img src="assets/img/kore_logo.svg" alt="Logo Kore Labs - Partner tecnologico" class="section__partner-logo" width="150" height="60" loading="lazy" decoding="async"></a>
           <p>Come <strong>partner di riferimento di <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">Kore Labs</a> in Italia, Svizzera e Spagna</strong>, ed esperti della loro piattaforma di <strong>Product Lifecycle Management</strong>, ci offriamo per accompagnare a costi e tempi inferiori le attività di configurazione e migrazione.</p>
         </div>
     </section>
@@ -221,10 +225,10 @@
   
   <div class="copyright-bar" aria-label="Copyright">© 2025 IBS Lab S.r.l. Tutti i diritti riservati.</div>
 
-  <!-- Scripts -->
-  <script src="assets/js/script.js"></script>
+  <!-- Scripts - Optimized for LCP -->
+  <script src="assets/js/script.js" defer></script>
   
-  <!-- Google Analytics -->
+  <!-- Google Analytics - Non-blocking -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CC61R12ZY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
