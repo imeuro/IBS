@@ -43,18 +43,16 @@
   <main>
     <!-- Soluzioni -->
     <section id="plm-pog" class="section section--light" aria-labelledby="plm-pog-heading">
-      <h1 id="plm-pog-heading" class="section__title">Product Lifecycle Management &<br> Product Oversight Governance</h1>
-      <div class="section__partner">
+
+        <h1 id="plm-pog-heading" class="section__title">Product Lifecycle Management &<br> Product Oversight Governance</h1>
+
+        <hr class="ibs__divider" />
+
+        <div class="section__partner">
             <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Visita il sito di Kore Labs"><img src="<?php echo IMAGES_PATH; ?>/kore_logo.svg" alt="Logo Kore Labs - Partner tecnologico" class="section__partner-logo" width="150" height="60" loading="lazy" decoding="async"></a>
-          
-            <p>
-            Come <strong>partner di riferimento di <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORElabs</a></strong> ed esperti della piattaforma <strong><a href="https://korelabs.co/koreprm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> per la gestione del ciclo di vita dei prodotti (Product Lifecycle Management)</strong>, ci offriamo per le attività di configurazione e migrazione, ponendo particolare attenzione all’ottimizzazione dei tempi di realizzo e dell’investimento economico
-            </p>
+            
+            <p>Come <strong>partner di riferimento di <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORElabs</a></strong> ed esperti della piattaforma <strong><a href="https://korelabs.co/koreprm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> per la gestione del ciclo di vita dei prodotti (Product Lifecycle Management)</strong>, ci offriamo per le attività di configurazione e migrazione, ponendo particolare attenzione all’ottimizzazione dei tempi di realizzo e dell’investimento economico</p>
         </div>
-        
-
-
-
         
     </section>
   </main>

@@ -83,6 +83,8 @@
           <li><strong>business intelligence avanzata</strong></li>
         </ul>
 
+        <hr class="ibs__divider" />
+
         <div class="section__partner">
           <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Visita il sito di Kore Labs"><img src="assets/img/kore_logo.svg" alt="Logo Kore Labs - Partner tecnologico" class="section__partner-logo" width="150" height="60" loading="lazy" decoding="async"></a>
           <p>Come <strong>partner di riferimento di <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">Kore Labs</a> in Italia, Svizzera e Spagna</strong>, ed esperti della loro piattaforma di <strong>Product Lifecycle Management</strong>, ci offriamo per accompagnare a costi e tempi inferiori le attività di configurazione e migrazione.</p>

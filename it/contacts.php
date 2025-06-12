@@ -36,36 +36,19 @@
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
   <?php include INCLUDES_PATH . '/it/head.php'; ?>
 </head>
-<body class="page" data-page="value-proposition">
+<body class="page" data-page="contacts">
   
   <?php include INCLUDES_PATH . '/it/header.php'; ?>
 
   <main>
     <!-- Soluzioni -->
-    <section id="value-proposition" class="section section--light" aria-labelledby="value-proposition-heading">
-      <h1 id="value-proposition-heading" class="section__title">VALUE PROPOSITION</h1>
+    <section id="contacts" class="section section--light" aria-labelledby="contacts-heading">
 
-      <hr class="ibs__divider" />
-      
-      <p>
-      La gestione del ciclo di vita del prodotto in ambito finanziario è altamente regolamentata ma la gestione è spesso manuale ed inefficiente, con dati diffusi in differenti repository. 
-      </p>
-      
+        <h1 id="contacts-heading" class="section__title">Contattaci</h1>
+        
+        <hr class="ibs__divider" />
 
-      
-      <ul class="section__list">
-        <li><strong>Offriamo soluzioni innovative al problema complesso della gestione del ciclo di vita dei prodotti finanziaria</strong></li>
-        <li><strong>Aiutiamo i nostri clienti a ridefinire digitalmente il modo in cui gestiscono i loro prodotti e servizi</strong></li>
-        <li>Forniamo strumenti moderni per garantire ai professionisti impegnati in ogni aspetto del <strong>product management</strong> e della <strong>Product Oversight and Governance (POG)</strong>
-          <ul class="section__list">
-            <li><strong>tracciabilità completa e trasparente</strong></li>
-            <li><strong>governo dinamico della conformità</strong></li>
-            <li><strong>business intelligence avanzata</strong></li> 
-          </ul>
-        </li>
-      </ul>
-
-
+        <p>pagina in allestimento</p>
         
     </section>
   </main>
