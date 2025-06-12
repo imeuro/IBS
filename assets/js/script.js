@@ -1,3 +1,8 @@
+import initHamburgerMenu from './hamburger-menu.js';
+
+// Inizializza il menu hamburger
+initHamburgerMenu();
+
 // Carosello Hero Background
 const heroImages = document.querySelectorAll('.hero__img');
 const heroQuotes = document.querySelectorAll('.hero__single-quote');

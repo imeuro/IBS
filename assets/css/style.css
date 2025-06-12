@@ -2,6 +2,7 @@
   --giallo: 249, 178, 51;
   --blu: 10, 22, 51;
   --light-blu: 22, 31, 53;
+  --dark-blu: 7, 13, 26;
   --bianco: 224, 230, 247;
 }
 
@@ -22,7 +23,7 @@ body {
    ===================== */
 .topbar {
   width: 100%;
-  background: #070d1a;
+  background: rgb(var(--dark-blu));
   min-height: 38px;
   display: flex;
   align-items: center;
@@ -52,6 +53,7 @@ body {
   background: rgb(var(--blu));
   padding: 1.2rem 1rem 2rem 1rem;
   box-sizing: border-box;
+  position: relative;
 }
 
 .header__container {
@@ -61,6 +63,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
+  position: relative;
 }
 
 .header__logo {
@@ -70,51 +73,172 @@ body {
   display: block;
 }
 
+/* =====================
+   Hamburger Menu Mobile
+   ===================== */
+.header__hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+  position: relative;
+}
+
+.header__hamburger img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.header__hamburger:hover img,
+.header__hamburger:focus img {
+  outline: none;
+}
+
+/* Gestione icone hamburger/close */
+.header__hamburger-icon {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+.header__close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-14px, -14px) rotate(-90deg);
+  opacity: 0;
+}
+
+.header__hamburger[aria-expanded="true"] .header__hamburger-icon {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.header__hamburger[aria-expanded="true"] .header__close-icon {
+  opacity: 1;
+  transform: translate(-14px, -14px) rotate(90deg);
+}
+
+/* Menu di navigazione mobile */
 .header__nav {
-  flex: 1;
-  margin-left: 2rem;
+  position: fixed;
+  top: 0;
+  right: -80vw;
+  width: 80vw;
+  height: 100vh;
+  background: rgb(var(--light-blu));
+  z-index: 1000;
+  overflow-y: auto;
+  transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+  padding-top: 200px;
+}
+
+.header__nav.is-open {
+  right: 0;
+  border-top: 38px solid rgb(var(--dark-blu));
 }
 
 .nav__list {
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.nav__list a {
+.nav__item {
+  border-bottom: 1px solid rgba(var(--bianco), 0.1);
+}
+
+.nav__item > a {
+  display: block;
   color: rgb(var(--bianco));
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.2s;
+  font-size: 1.1rem;
+  padding: 1.2rem 1.5rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.nav__list a:hover,
-.nav__list a:focus {
+.nav__item > a:hover,
+.nav__item > a:focus {
+  background: rgba(var(--giallo), 0.1);
   color: rgb(var(--giallo));
   outline: none;
 }
 
-.header__lang {
-  display: flex;
-  gap: 0.5rem;
+/* Sottomenu */
+.nav__submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: rgba(var(--blu), 0.3);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
-.header__lang img {
-  width: 28px;
-  height: 20px;
-  border-radius: 2px;
-  cursor: pointer;
-  border: 1px solid rgb(var(--blu));
-  transition: border 0.2s;
+.nav__submenu li a {
+  display: block;
+  color: rgba(var(--bianco), 0.8);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.95rem;
+  padding: 0.8rem 2.5rem;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+}
+.nav__submenu li:last-child a {
+  margin-bottom: 30px;
 }
 
-.header__lang img:focus,
-.header__lang img:hover {
-  border: 1.5px solid rgb(var(--giallo));
+.nav__submenu li a:hover,
+.nav__submenu li a:focus {
+  color: rgb(var(--giallo));
+  background: rgba(var(--giallo), 0.05);
+  padding-left: 3rem;
   outline: none;
+}
+
+.nav__item.has-submenu > a::after {
+  content: '+';
+  float: right;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+  transform: translate(-6px, -4px);
+}
+
+.nav__item.has-submenu.is-expanded > a::after {
+  transform: translate(-3px, -3px) rotate(45deg);
+}
+
+.nav__item.has-submenu.is-expanded .nav__submenu {
+  max-height: 300px;
+}
+
+/* Overlay */
+.header__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.header__overlay.is-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* =====================
@@ -246,13 +370,16 @@ body {
 }
 
 .section h2,
-.footer h2 {
-  /* font-family: 'Barlow', sans-serif; */
+.footer h2,
+.section h1,
+.section__title {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.section h2 {
+.section h2,
+.section h1,
+.section__title {
   color: rgb(var(--giallo));
   font-size: 2rem;
   margin: 0 0 1.5rem 0;
@@ -322,13 +449,14 @@ body {
 .footer {
   background: #16223d;
   color: rgb(var(--bianco));
-  padding: 2rem 1rem 1.5rem 1rem;
+  padding: 1.2rem 1rem .5rem 1rem;
   margin-top: 2rem;
+  box-sizing: border-box;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .footer h2 {
@@ -396,7 +524,7 @@ body {
    Copyright Bar
    ===================== */
 .copyright-bar {
-  background: #070d1a;
+  background: rgb(var(--dark-blu));
   color: rgb(var(--bianco));
   text-align: center;
   font-size: 0.95rem;
@@ -499,19 +627,17 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .header__container {
-    max-width: 1200px;
-  }
   .section,
-  .footer {
+  .footer__columns {
     max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
 
   .section,
-  .footer {
+  .footer__columns {
     max-width: 1200px;
   }
 
@@ -519,5 +645,134 @@ body {
     margin-top: -2rem;
     position: relative;
     z-index: 2;
+  }
+}
+
+/* =====================
+   Responsive - Desktop
+   ===================== */
+@media (min-width: 1000px) {
+  .header__hamburger {
+    display: none;
+  }
+
+  .header__overlay {
+    display: none;
+  }
+
+  .header__nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    padding-top: 0;
+    flex: 1;
+    margin-left: 2rem;
+    overflow: visible;
+    transition: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .nav__item {
+    border-bottom: none;
+    position: relative;
+  }
+
+  .nav__item > a {
+    padding: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: normal;
+    background: rgba(var(--light-blu), 1);
+    padding: 10px 25px;
+    border-radius: 10px;
+  }
+
+  .nav__item > a:hover,
+  .nav__item > a:focus,
+  .nav__submenu li a:hover,
+  .nav__submenu li a:focus {
+    background: rgba(var(--dark-blu), 1);
+    color: rgb(var(--giallo));
+  }
+
+  /* Sottomenu desktop - dropdown al hover */
+  .nav__submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(var(--light-blu));
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    min-width: 200px;
+    max-height: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .nav__item:hover .nav__submenu,
+  .nav__item:focus-within .nav__submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    max-height: none;
+  }
+
+  .nav__submenu li a {
+    padding: 0.8rem 1.2rem;
+  }
+  .nav__submenu li:last-child a {
+    margin-bottom: 10px;
+  }
+
+  .nav__submenu li a:hover,
+  .nav__submenu li a:focus {
+    padding-left: 1.2rem;
+  }
+
+  .nav__item.has-submenu > a::after {
+    /* content: none; */
+  }
+
+
+  .header__container {
+    max-width: 1000px;
+  }
+  .header__nav {
+    flex: 0 0 auto;
+  }
+}
+
+.header__lang {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header__lang img {
+  width: 28px;
+  height: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid rgb(var(--blu));
+  transition: border 0.2s;
+}
+
+.header__lang img:focus,
+.header__lang img:hover {
+  border: 1.5px solid rgb(var(--giallo));
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  .header__container {
+    max-width: 1200px;
   }
 }
