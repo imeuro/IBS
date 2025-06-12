@@ -50,9 +50,61 @@
       <p>
       La gestione del ciclo di vita del prodotto in ambito finanziario è altamente regolamentata ma la gestione è spesso manuale ed inefficiente, con dati diffusi in differenti repository. 
       </p>
+    </section>
+
+    <section id="value-proposition-content" class="section section--light" aria-labelledby="value-proposition-list-content">
+      <div class="value-proposition-graphic" aria-label="Rappresentazione grafica dei rischi, processi e soluzioni">
+        <!-- Colonna sinistra: Rischi e Processi -->
+        <div class="vp-col vp-col--left">
+          <div class="vp-cell">
+            <!-- Placeholder SVG icona rischio -->
+            <span class="vp-icon" aria-label="Attenzione" tabindex="0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+            </span>
+            <div class="vp-text">
+              <strong>ALTO RISCHIO DI SANZIONI</strong>
+              <span class="vp-desc">e danni alla reputazione in caso di evidenze non soddisfacenti</span>
+            </div>
+          </div>
+          <div class="vp-cell">
+            <!-- Placeholder SVG icona processi lenti -->
+            <span class="vp-icon" aria-label="Processi lenti" tabindex="0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"/></svg>
+            </span>
+            <div class="vp-text">
+              <strong>PROCESSI LENTI</strong>
+              <span class="vp-desc">gestione manuale e tempi di commercializzazione più lunghi</span>
+            </div>
+          </div>
+        </div>
+        <!-- Linea di collegamento -->
+        <div class="vp-col vp-col--connector" aria-hidden="true">
+          <svg class="vp-connector-svg" width="40" height="120" viewBox="0 0 40 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <!-- Linea verticale centrale -->
+            <line x1="20" y1="10" x2="20" y2="110" stroke="#fff" stroke-width="1"/>
+            <!-- Ramo orizzontale superiore -->
+            <line x1="20" y1="10" x2="0" y2="10" stroke="#fff" stroke-width="1"/>
+            <!-- Ramo orizzontale inferiore -->
+            <line x1="20" y1="110" x2="0" y2="110" stroke="#fff" stroke-width="1"/>
+            <!-- Ramo orizzontale centrale verso destra -->
+            <line x1="20" y1="60" x2="40" y2="60" stroke="#fff" stroke-width="1"/>
+          </svg>
+        </div>
+        <!-- Colonna centrale: Testo -->
+        <div class="vp-col vp-col--center">
+          <div class="vp-main-text">
+            ricerca di <strong>soluzioni digitali, modulari e configurabili</strong> per gestire e monitorare i prodotti in <strong>un ambiente controllato e integrato</strong> con una visione <strong>end-to-end</strong>
+          </div>
+        </div>
+        <!-- Colonna destra: Cloud di parole -->
+        <div class="vp-col vp-col--right">
+          <img src="<?php echo IMAGES_PATH; ?>/value-prop-cloud.png" alt="Cloud di parole: Product Lifecycle Management, strategy, workflow, data, process, service, PLM, Management, ecc." class="vp-cloud-img" loading="lazy">
+        </div>
+      </div>
+    </section>
       
 
-      
+    <section id="value-proposition-closing" class="section section--light" aria-labelledby="value-proposition-list-closing">
       <ul class="section__list">
         <li><strong>Offriamo soluzioni innovative al problema complesso della gestione del ciclo di vita dei prodotti finanziaria</strong></li>
         <li><strong>Aiutiamo i nostri clienti a ridefinire digitalmente il modo in cui gestiscono i loro prodotti e servizi</strong></li>
