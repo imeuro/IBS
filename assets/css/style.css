@@ -968,7 +968,7 @@ body {
   }
 
   .vp-col--right {
-    flex: 1 0 25vw;
+    flex: 1 0 33%;
     display: none;
   }
 }
