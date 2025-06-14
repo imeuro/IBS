@@ -840,11 +840,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   background: rgba(var(--bianco), .05);
   border-radius: 12px;
   border: 1px solid rgba(var(--bianco), .25);
   min-width: 150px;
   max-width: 220px;
+  min-height: 180px;
   padding: 0.75rem 0.5rem 1.25rem 0.5rem;
   box-sizing: border-box;
   position: relative;
