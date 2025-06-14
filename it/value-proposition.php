@@ -55,7 +55,7 @@
     <section id="value-proposition-content" class="section section--light" aria-labelledby="value-proposition-list-content">
       <div class="value-proposition-graphic" aria-label="Rappresentazione grafica dei rischi, processi e soluzioni">
         <!-- Colonna sinistra: Rischi e Processi -->
-        <div class="vp-col vp-col--left">
+        <div class="vp-col vp-col--left value-proposition-graphic__col">
           <div class="vp-cell">
             <!-- Placeholder SVG icona rischio -->
             <span class="vp-icon" aria-label="Attenzione" tabindex="0">
@@ -78,7 +78,7 @@
           </div>
         </div>
         <!-- Linea di collegamento -->
-        <div class="vp-col vp-col--connector" aria-hidden="true">
+        <div class="vp-col vp-col--connector value-proposition-graphic__col" aria-hidden="true">
           <svg class="vp-connector-svg" width="40" height="120" viewBox="0 0 40 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <!-- Linea verticale centrale -->
             <line x1="20" y1="10" x2="20" y2="110" stroke="#fff" stroke-width="1"/>
@@ -91,13 +91,13 @@
           </svg>
         </div>
         <!-- Colonna centrale: Testo -->
-        <div class="vp-col vp-col--center">
+        <div class="vp-col vp-col--center value-proposition-graphic__col">
           <div class="vp-main-text">
             ricerca di <strong>soluzioni digitali, modulari e configurabili</strong> per gestire e monitorare i prodotti in <strong>un ambiente controllato e integrato</strong> con una visione <strong>end-to-end</strong>
           </div>
         </div>
         <!-- Colonna destra: Cloud di parole -->
-        <div class="vp-col vp-col--right">
+        <div class="vp-col vp-col--right value-proposition-graphic__col">
           <img src="<?php echo IMAGES_PATH; ?>/value-prop-cloud.png" alt="Cloud di parole: Product Lifecycle Management, strategy, workflow, data, process, service, PLM, Management, ecc." class="vp-cloud-img" loading="lazy">
         </div>
       </div>

@@ -3,6 +3,15 @@ import initHamburgerMenu from './hamburger-menu.js';
 // Inizializza il menu hamburger
 initHamburgerMenu();
 
+// Importa il fade-in sequenziale solo su plm-pog.php
+if (document.body.dataset.page === 'plm-pog') {
+  import('./plm-pog-fadein.js');
+}
+// Importa il fade-in sequenziale solo su value-proposition.php
+if (document.body.dataset.page === 'value-proposition') {
+  import('./value-proposition-fadein.js');
+}
+
 // Carosello Hero Background
 const heroImages = document.querySelectorAll('.hero__img');
 const heroQuotes = document.querySelectorAll('.hero__single-quote');
