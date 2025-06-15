@@ -1005,10 +1005,6 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .vp-cell {
-    min-width: 260px;
-    max-width: 300px;
-  }
   .vp-col--right {
     display: block;
   }
@@ -1017,6 +1013,10 @@ body {
 @media (min-width: 1200px) {
   .value-proposition-graphic {
     gap: 4rem;
+  }
+  .vp-cell {
+    min-width: 260px;
+    max-width: 300px;
   }
 }
 
@@ -1076,4 +1076,23 @@ body {
 .vp-col.vp-col--stacked .vp-cell.fade-in {
   opacity: 1;
   animation: elastic-bounce-in 1.2s ease-out;
+}
+
+/* =====================
+   Team
+   ===================== */
+
+.section__twocolumns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.section__twocolumns svg {
+  fill: rgba(var(--bianco), 1);
+}
+
+.section__twocolumns .twocolumns-icon {
+  flex: 1 0 64px;
 }

@@ -7,7 +7,7 @@ if (vpGraphic) {
   const fadeInSequence = async () => {
     for (const col of cols) {
       col.classList.add('fade-in');
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise(resolve => setTimeout(resolve, 300));
     }
   };
 
