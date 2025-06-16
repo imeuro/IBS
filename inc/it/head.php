@@ -11,7 +11,7 @@
   <link rel="icon" type="image/svg+xml" href="<?php echo IMAGES_PATH; ?>/favicon/favicon.svg" />
   <link rel="shortcut icon" href="<?php echo IMAGES_PATH; ?>/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo IMAGES_PATH; ?>/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="<?php echo IMAGES_PATH; ?>/favicon/site.webmanifest" />
+  <link rel="manifest" href="<?php echo BASE_PATH; ?>/site.webmanifest" />
 
   <!-- Structured Data - Organization -->
   <script type="application/ld+json">
