@@ -47,35 +47,12 @@
 
       <hr class="ibs__divider" />
       
-      <p>Offriamo soluzioni innovative e personalizzate che rispondano efficacemente alle esigenze specifiche dei nostri clienti, attraverso la digitalizzazione a 360° delle informazioni che consentono di ottimizzare i processi end-to-end di Product Oversight Governance e di Business Intelligence a supporto delle decisioni e al contenimento dei rischi. In dettaglio offriamo:</p>
-
-      <ul class="section__list">
-        <li>
-          <strong class="section__list-title">Soluzioni personalizzate per un governo centralizzato</strong>
-          <p>Creiamo proposte su misura, superando la gestione per silos delle informazioni e garantendo la massima efficacia e impatto attraverso la visione integrata del portafoglio e processi POG coerenti.</p>
-        </li>
-        <li>
-          <strong class="section__list-title">Innovazione continua e Compliance dinamica</strong>
-          <p>Investiamo costantemente per offrire soluzioni automatizzate, all'avanguardia e congruenti con le linee guida sempre più stringenti governate dalle autorità che garantiscano ai nostri clienti un vantaggio competitivo nella gestione dei rischi operativi e reputazionali.</p>
-        </li>
-        <li>
-          <strong class="section__list-title">Approccio collaborativo e integrato</strong>
-          <p>Lavoriamo a stretto contatto con i nostri clienti, instaurando un rapporto di fiducia e collaborazione reciproca per raggiungere insieme gli obiettivi prefissati di miglioramento del «time to market» e maggiore «engagement» e allineamento delle funzioni coinvolte.</p>
-        </li>
-        <li>
-          <strong class="section__list-title">Trasparenza e comunicazione</strong>
-          <p>Ci impegniamo a fornire un supporto costante e proattivo per garantire che i nostri clienti raggiungano i loro obiettivi e ottengano i risultati desiderati di prodotto in una logica di compliance dinamica e di totale trasparenza decisionale.</p>
-        </li>
-      </ul>
+      <p>
+      La gestione del ciclo di vita del prodotto in ambito finanziario è altamente regolamentata ma la gestione è spesso manuale ed inefficiente, con dati diffusi in differenti repository. 
+      </p>
     </section>
 
     <section id="value-proposition-content" class="section section--light" aria-labelledby="value-proposition-list-content">
-      <h2 id="value-proposition-heading" class="section__title">Product Management Efficiency</h2>
-      <hr class="ibs__divider" />
-      <p>
-      La gestione del ciclo di vita del prodotto in ambito finanziario è altamente regolamentata ma la gestione è spesso manuale ed inefficiente, con sistemi non connessi, data point multipli e ridondanti, processi frammentati, governance e reportistica incoerenti. 
-      </p>
-
       <div class="value-proposition-graphic" aria-label="Rappresentazione grafica dei rischi, processi e soluzioni">
         <!-- Colonna sinistra: Rischi e Processi -->
         <div class="vp-col vp-col--left value-proposition-graphic__col">
@@ -126,6 +103,23 @@
       </div>
     </section>
       
+
+    <section id="value-proposition-closing" class="section section--light" aria-labelledby="value-proposition-list-closing">
+      <ul class="section__list">
+        <li><strong>Offriamo soluzioni innovative al problema complesso della gestione del ciclo di vita dei prodotti finanziaria</strong></li>
+        <li><strong>Aiutiamo i nostri clienti a ridefinire digitalmente il modo in cui gestiscono i loro prodotti e servizi</strong></li>
+        <li>Forniamo strumenti moderni per garantire ai professionisti impegnati in ogni aspetto del <strong>product management</strong> e della <strong>Product Oversight and Governance (POG)</strong>
+          <ul class="section__list">
+            <li><strong>tracciabilità completa e trasparente</strong></li>
+            <li><strong>governo dinamico della conformità</strong></li>
+            <li><strong>business intelligence avanzata</strong></li> 
+          </ul>
+        </li>
+      </ul>
+
+
+        
+    </section>
   </main>
   
   <!-- Footer -->
