@@ -70,8 +70,6 @@
     </section>
 
     <section id="value-proposition-content" class="section section--light" aria-labelledby="value-proposition-list-content">
-      <h2 id="value-proposition-heading" class="section__title">Product Management Efficiency</h2>
-      <hr class="ibs__divider" />
       <p>
       La gestione del ciclo di vita del prodotto in ambito finanziario è altamente regolamentata ma la gestione è spesso manuale ed inefficiente, con sistemi non connessi, data point multipli e ridondanti, processi frammentati, governance e reportistica incoerenti. 
       </p>

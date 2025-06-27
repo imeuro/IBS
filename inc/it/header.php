@@ -25,13 +25,13 @@
               <li><a href="<?php echo BASE_PATH; ?>/it/plm-pog" tabindex="0">PLM | POG</a></li>
             </ul>
           </li>
-          <li class="nav__item">
+          <!-- <li class="nav__item">
             <a href="<?php echo BASE_PATH; ?>/it/mercati" tabindex="0">mercati</a>
-          </li>
+          </li> -->
           <li class="nav__item has-submenu">
             <a href="#chi-siamo" tabindex="0">chi siamo</a>
             <ul class="nav__submenu">
-              <li><a href="<?php echo BASE_PATH; ?>/it/team" tabindex="0">Il nostro Team</a></li>
+              <li><a href="<?php echo BASE_PATH; ?>/it/team" tabindex="0">NOI</a></li>
               <li><a href="<?php echo BASE_PATH; ?>/it/partners" tabindex="0">I Nostri Partner</a></li>
             </ul>
           </li>

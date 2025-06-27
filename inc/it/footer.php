@@ -18,13 +18,15 @@
         </div>
         <div class="footer__divider" aria-hidden="true"></div>
         <div class="footer__col">
-            <h3>IBSlab S.r.l.</h3>
+            <h2>IBSlab S.r.l.</h2>
             <p><strong>P.Iva:</strong> 13957350963<br>
             <strong>N° REA:</strong> MI – 2752937<br>
             <strong>Sede legale:</strong> Via Paolo Da Cannobio 9 - 20122 Milano</p>
         </div>
         <div class="footer__divider" aria-hidden="true"></div>
         <div class="footer__col">
+            <h3>&nbsp;</h3>
+            <p><a href="<?php echo absoluteUrl(); ?>it/privacy-cookie-policy/">Privacy Policy<br><br>Cookie Policy</a></p>
         </div>
     </div>
 </footer>

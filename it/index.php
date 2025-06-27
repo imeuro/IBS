@@ -36,12 +36,13 @@
   <link rel="preload" as="image" href="assets/img/IBS_logo.png" fetchpriority="high">
   <?php include INCLUDES_PATH . '/it/head.php'; ?>
 </head>
-<body>
+<body class="home page" data-page="home">
   
   <?php include INCLUDES_PATH . '/it/header.php'; ?>
 
   <main>
     <!-- Hero Section -->
+     <a href="<?php echo absoluteUrl(); ?>it/value-proposition/">
     <section class="hero" aria-label="Citazione principale">
       <div class="hero__carousel" aria-hidden="true">
         <img src="assets/img/hero/hero1.jpg" class="hero__img is-active" alt="" aria-hidden="true" loading="eager" fetchpriority="high" decoding="sync">
@@ -66,8 +67,9 @@
         </div>
       </div>
     </section>
+    </a>
 
-    <!-- Soluzioni -->
+    <!-- Soluzioni
     <section id="soluzioni" class="section section--light" aria-labelledby="soluzioni-heading">
       <h2 id="soluzioni-heading">Le Nostre Soluzioni</h2>
         <p>
@@ -90,9 +92,9 @@
           <p>Come <strong>partner di riferimento di <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">Kore Labs</a> in Italia, Svizzera e Spagna</strong>, ed esperti della loro piattaforma di <strong>Product Lifecycle Management</strong>, ci offriamo per accompagnare a costi e tempi inferiori le attività di configurazione e migrazione.</p>
         </div>
     </section>
+    -->
 
-    <!-- Chi siamo -->
-    <section id="chi-siamo" class="section section--light" aria-labelledby="chi-siamo-heading">
+    <!-- Chi siamoo" class="section section--light" aria-labelledby="chi-siamo-heading">
       <h2 id="chi-siamo-heading">Chi Siamo</h2>
         <p>Siamo un <strong>team di professionisti</strong> con esperienza pluriennale nel <strong>settore finanziario e tecnologico</strong>, dedicati a portare innovazione e valore ai nostri clienti.</p>
         <p>Siamo la <strong>società scelta da <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Management as a Service">Kore Labs</a></strong>, azienda inglese leader globale nell'offerta di servizi di <strong>Product Management-as-a-Service</strong> finanziari e assicurativi, per supportare in esclusiva le attività di configurazione, migrazione e integrazione nella loro piattaforma.</p>
@@ -105,6 +107,7 @@
           <li>Supporto alla conformità normativa nel settore bancario</li>
         </ul>
     </section>
+    -->
   </main>
   
   <!-- Footer -->
