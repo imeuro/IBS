@@ -1,0 +1,22 @@
+# Protegge i file caricati da accesso diretto
+Options -Indexes
+<Files "*.pdf">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Impedisce esecuzione di script
+<Files "*.php">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<Files "*.py">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<Files "*.sh">
+    Order Deny,Allow
+    Deny from all
+</Files> 
