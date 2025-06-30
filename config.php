@@ -8,7 +8,7 @@ define('INCLUDE_SERVER_NAME_IN_PATH', false); // Impostare a true per includere 
 
 // Funzione per determinare il basepath in base all'ambiente
 function getBasePath() {
-    $serverName = $_SERVER['SERVER_NAME'];
+    $serverName = $_SERVER['SERVER_NAME'] ?? 'localhost';
     $basePath = '';
     
     // Aggiungi il nome del server al path se richiesto
@@ -48,4 +48,17 @@ function absoluteUrl($path = '') {
     $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
     $host = $_SERVER['HTTP_HOST'];
     return $protocol . '://' . $host . url($path);
+}
+
+// Funzione per cache busting basato su filemtime
+function assetWithVersion($relativePath) {
+    $fullPath = ROOT_PATH . '/' . ltrim($relativePath, '/');
+    
+    if (file_exists($fullPath)) {
+        $version = filemtime($fullPath);
+        return ASSETS_PATH . '/' . ltrim(str_replace('assets/', '', $relativePath), '/') . '?v=' . $version;
+    }
+    
+    // Fallback se il file non esiste
+    return ASSETS_PATH . '/' . ltrim(str_replace('assets/', '', $relativePath), '/');
 } 

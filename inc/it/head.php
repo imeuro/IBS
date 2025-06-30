@@ -1,11 +1,8 @@
-  <link rel="preload" href="<?php echo CSS_PATH; ?>/style.css" as="style">
-  <link rel="stylesheet" href="<?php echo CSS_PATH; ?>/style.css">
+  <link rel="preload" href="<?php echo assetWithVersion('assets/css/style.css'); ?>" as="style">
+  <link rel="stylesheet" href="<?php echo assetWithVersion('assets/css/style.css'); ?>">
 
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=EB+Garamond:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet"></noscript>
-
-  <link rel="preload" href="<?php echo CSS_PATH; ?>/style.css" as="style">
-  <link rel="stylesheet" href="<?php echo CSS_PATH; ?>/style.css">
   
   <link rel="icon" type="image/png" href="<?php echo IMAGES_PATH; ?>/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="<?php echo IMAGES_PATH; ?>/favicon/favicon.svg" />
