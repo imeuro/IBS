@@ -144,7 +144,7 @@
               <label class="checkbox-label">
                 <input type="checkbox" id="privacy" name="privacy" required aria-required="true">
                 <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Accetto l'<a href="<?php echo BASE_PATH; ?>/it/cookie-policy.php" target="_blank" rel="noopener">informativa sulla privacy</a> e autorizzo il trattamento dei miei dati personali e del mio CV <span class="required">*</span></span>
+                <span class="checkbox-text">Accetto l'<a href="<?php echo BASE_PATH; ?>/it/privacy-cookie-policy.php" target="_blank" rel="noopener">informativa sulla privacy</a> e autorizzo il trattamento dei miei dati personali e del mio CV <span class="required">*</span></span>
               </label>
             </div>
           </div>

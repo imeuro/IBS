@@ -1,6 +1,11 @@
 // Validazione e gestione form di contatto
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
+const initContactForm = () => {
+  const contactForm = document.getElementById('contact-form');
+  if (!contactForm) {
+    console.warn('Form di contatto non trovato nella pagina');
+    return;
+  }
+
   const submitButton = contactForm.querySelector('.form-submit');
   const submitText = contactForm.querySelector('.submit-text');
   const submitLoading = contactForm.querySelector('.submit-loading');
@@ -200,4 +205,11 @@ if (contactForm) {
       submitLoading.style.display = 'none';
     }
   });
+};
+
+// Inizializza quando il DOM è pronto
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initContactForm);
+} else {
+  initContactForm();
 } 
