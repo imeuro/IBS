@@ -51,7 +51,7 @@
 
       <ul class="section__list">
         <li>
-          <strong class="section__list-title">Soluzioni personalizzate per un governo centralizzato</strong>
+          <strong class="section__list-title">Soluzioni personalizzate per una governance centralizzata</strong>
           <p>Creiamo proposte su misura, superando la gestione per silos delle informazioni e garantendo la massima efficacia e impatto attraverso la visione integrata del portafoglio e processi POG coerenti.</p>
         </li>
         <li>
