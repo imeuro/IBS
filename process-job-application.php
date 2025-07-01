@@ -2,7 +2,8 @@
 require_once __DIR__ . '/config.php';
 
 // Configurazione email per candidature (da personalizzare)
-define('JOB_EMAIL_TO', 'daniela.connizzoli@ibslab.eu'); // Email destinatario per candidature
+//define('JOB_EMAIL_TO', 'daniela.connizzoli@ibslab.eu'); // Email destinatario per candidature
+define('CONTACT_EMAIL_TO', 'hello@meuro.dev'); // Email destinatario
 define('JOB_EMAIL_FROM', 'noreply@ibslab.eu'); // Email mittente
 define('JOB_EMAIL_SUBJECT', 'ibslab.eu - Nuova candidatura dal sito web');
 

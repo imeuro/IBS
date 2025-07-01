@@ -2,7 +2,8 @@
 require_once __DIR__ . '/config.php';
 
 // Configurazione email (da spostare in config.php)
-define('CONTACT_EMAIL_TO', 'info@ibslab.eu'); // Email destinatario
+// define('CONTACT_EMAIL_TO', 'info@ibslab.eu'); // Email destinatario
+define('CONTACT_EMAIL_TO', 'hello@meuro.dev'); // Email destinatario
 define('CONTACT_EMAIL_FROM', 'noreply@ibslab.eu'); // Email mittente
 define('CONTACT_EMAIL_SUBJECT', 'ibslab.eu - Nuovo contatto dal sito web');
 
