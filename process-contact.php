@@ -58,6 +58,9 @@ try {
     $privacy = isset($_POST['privacy']) ? true : false;
     $preferenzaContatto = isset($_POST['preferenza_contatto']) ? sanitizeInput($_POST['preferenza_contatto']) : 'entrambi';
 
+    // Debug: Log dei dati ricevuti (rimuovere in produzione)
+    error_log("Contact form data received: nome=$nome, cognome=$cognome, email=$email, preferenza=$preferenzaContatto");
+
     // Validazione campi sempre obbligatori
     if (empty($nome) || empty($cognome) || empty($messaggio) || !$privacy) {
         echo json_encode(['success' => false, 'message' => 'Tutti i campi obbligatori devono essere compilati.']);
@@ -143,19 +146,41 @@ try {
         $headerString .= $key . ': ' . $value . "\r\n";
     }
 
+    // Debug: Verifica configurazione mail
+    error_log("Attempting to send email to: " . CONTACT_EMAIL_TO);
+    error_log("Mail function available: " . (function_exists('mail') ? 'yes' : 'no'));
+
     // Invia email
     $success = mail(CONTACT_EMAIL_TO, CONTACT_EMAIL_SUBJECT, $emailBody, $headerString);
 
     if ($success) {
         // Log dell'invio (opzionale)
-        error_log("Contact form submitted: " . ($email ?: 'no-email') . " - " . date('Y-m-d H:i:s'));
+        error_log("Contact form submitted successfully: " . ($email ?: 'no-email') . " - " . date('Y-m-d H:i:s'));
         
         echo json_encode([
             'success' => true, 
             'message' => 'Messaggio inviato con successo! Ti risponderemo al più presto.'
         ]);
     } else {
-        throw new Exception('Errore nell\'invio dell\'email');
+        // Log più dettagliato dell'errore mail
+        $lastError = error_get_last();
+        error_log("Mail function failed. Last error: " . ($lastError ? $lastError['message'] : 'unknown'));
+        
+        // Fallback: salva il contatto in un file per sviluppo
+        $fallbackFile = __DIR__ . '/contact-fallback.log';
+        $fallbackData = date('Y-m-d H:i:s') . " - CONTACT FALLBACK\n" . $emailBody . "\n" . str_repeat('-', 50) . "\n\n";
+        file_put_contents($fallbackFile, $fallbackData, FILE_APPEND | LOCK_EX);
+        
+        // In sviluppo, considera il fallback come successo
+        if (defined('DEVELOPMENT_MODE') && DEVELOPMENT_MODE) {
+            error_log("Contact saved to fallback file due to mail failure");
+            echo json_encode([
+                'success' => true, 
+                'message' => 'Messaggio salvato! (Modalità sviluppo - mail non configurata)'
+            ]);
+        } else {
+            throw new Exception('Errore nell\'invio dell\'email - funzione mail() ha restituito false');
+        }
     }
 
 } catch (Exception $e) {

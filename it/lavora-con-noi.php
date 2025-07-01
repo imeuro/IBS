@@ -50,7 +50,7 @@
 
         <p>Unisciti al nostro team! Invia la tua candidatura compilando il form sottostante e allegando il tuo CV. Valuteremo il tuo profilo e ti contatteremo per le opportunità più in linea con le tue competenze.</p>
 
-        <form id="job-application-form" class="contact-form" action="<?php echo BASE_PATH; ?>/process-job-application.php" method="POST" enctype="multipart/form-data" novalidate>
+        <form id="job-application-form" class="contact-form" action="<?php echo url('process-job-application.php'); ?>" method="POST" enctype="multipart/form-data" novalidate>
           
           <!-- Campo di controllo automatico -->
           <div class="form-field-extra">
@@ -144,7 +144,7 @@
               <label class="checkbox-label">
                 <input type="checkbox" id="privacy" name="privacy" required aria-required="true">
                 <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Accetto l'<a href="<?php echo BASE_PATH; ?>/it/privacy-cookie-policy.php" target="_blank" rel="noopener">informativa sulla privacy</a> e autorizzo il trattamento dei miei dati personali e del mio CV <span class="required">*</span></span>
+                <span class="checkbox-text">Accetto l'<a href="<?php echo url('it/privacy-cookie-policy.php'); ?>" target="_blank" rel="noopener">informativa sulla privacy</a> e autorizzo il trattamento dei miei dati personali e del mio CV <span class="required">*</span></span>
               </label>
             </div>
           </div>
@@ -168,7 +168,7 @@
   <?php include INCLUDES_PATH . '/it/footer.php'; ?>
 
   <!-- Scripts - Optimized for LCP -->
-  <script src="<?php echo assetWithVersion('assets/js/script.js'); ?>" type="module" defer></script>
+  <script src="<?php echo assetWithVersionSafe('js/script.js'); ?>" type="module" defer></script>
   
   <!-- Google Analytics - Non-blocking -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CC61R12ZY"></script>

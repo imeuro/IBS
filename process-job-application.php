@@ -1,9 +1,14 @@
 <?php
 require_once __DIR__ . '/config.php';
 
-// Configurazione email per candidature (da personalizzare)
-//define('JOB_EMAIL_TO', 'daniela.connizzoli@ibslab.eu'); // Email destinatario per candidature
-define('CONTACT_EMAIL_TO', 'hello@meuro.dev'); // Email destinatario
+// Debug: Abilita error reporting per identificare problemi
+if (DEVELOPMENT_MODE) {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+}
+
+// Configurazione email per candidature
+define('JOB_EMAIL_TO', 'hello@meuro.dev'); // Email destinatario per candidature
 define('JOB_EMAIL_FROM', 'noreply@ibslab.eu'); // Email mittente
 define('JOB_EMAIL_SUBJECT', 'ibslab.eu - Nuova candidatura dal sito web');
 
@@ -11,6 +16,13 @@ define('JOB_EMAIL_SUBJECT', 'ibslab.eu - Nuova candidatura dal sito web');
 define('UPLOAD_MAX_SIZE', 2 * 1024 * 1024); // 2MB in bytes
 define('UPLOAD_ALLOWED_TYPES', ['application/pdf']);
 define('UPLOAD_DIR', __DIR__ . '/uploads/cv/');
+
+// Debug: Log configurazione
+if (DEVELOPMENT_MODE) {
+    error_log("Job application - UPLOAD_DIR: " . UPLOAD_DIR);
+    error_log("Job application - Directory exists: " . (is_dir(UPLOAD_DIR) ? 'yes' : 'no'));
+    error_log("Job application - Directory writable: " . (is_writable(UPLOAD_DIR) ? 'yes' : 'no'));
+}
 
 // Headers per JSON response
 header('Content-Type: application/json');
@@ -94,6 +106,12 @@ function generateSafeFileName($originalName, $prefix = '') {
 }
 
 try {
+    // Debug: Log dati ricevuti
+    if (DEVELOPMENT_MODE) {
+        error_log("Job application - POST data: " . print_r($_POST, true));
+        error_log("Job application - FILES data: " . print_r($_FILES, true));
+    }
+    
     // Controllo campo di sicurezza
     $securityField = isset($_POST['company_url']) ? sanitizeInput($_POST['company_url']) : '';
     if (!empty($securityField)) {
@@ -115,7 +133,7 @@ try {
     $preferenzaContatto = isset($_POST['preferenza_contatto']) ? sanitizeInput($_POST['preferenza_contatto']) : 'entrambi';
 
     // Validazione campi sempre obbligatori
-    if (empty($nome) || empty($cognome) || !$privacy) {
+    if (empty($nome) || empty($cognome) || empty($messaggio) || !$privacy) {
         echo json_encode(['success' => false, 'message' => 'Tutti i campi obbligatori devono essere compilati.']);
         exit;
     }

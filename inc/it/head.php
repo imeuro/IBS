@@ -1,5 +1,5 @@
-  <link rel="preload" href="<?php echo assetWithVersion('assets/css/style.css'); ?>" as="style">
-  <link rel="stylesheet" href="<?php echo assetWithVersion('assets/css/style.css'); ?>">
+  <link rel="preload" href="<?php echo assetWithVersionSafe('css/style.css'); ?>" as="style">
+<link rel="stylesheet" href="<?php echo assetWithVersionSafe('css/style.css'); ?>">
 
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=EB+Garamond:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet"></noscript>
@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="<?php echo IMAGES_PATH; ?>/favicon/favicon.svg" />
   <link rel="shortcut icon" href="<?php echo IMAGES_PATH; ?>/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo IMAGES_PATH; ?>/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="<?php echo BASE_PATH; ?>/site.webmanifest" />
+  <link rel="manifest" href="<?php echo url('site.webmanifest'); ?>">
 
   <!-- Structured Data - Organization -->
   <script type="application/ld+json">

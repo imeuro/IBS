@@ -21,25 +21,25 @@
           <li class="nav__item has-submenu">
             <a href="#soluzioni" tabindex="0">soluzioni</a>
             <ul class="nav__submenu">
-              <li><a href="<?php echo BASE_PATH; ?>/it/value-proposition" tabindex="0">Value Proposition</a></li>
-              <li><a href="<?php echo BASE_PATH; ?>/it/plm-pog" tabindex="0">PLM | POG</a></li>
+              <li><a href="<?php echo url('it/value-proposition'); ?>" tabindex="0">Value Proposition</a></li>
+              <li><a href="<?php echo url('it/plm-pog'); ?>" tabindex="0">PLM | POG</a></li>
             </ul>
           </li>
           <!-- <li class="nav__item">
-            <a href="<?php echo BASE_PATH; ?>/it/mercati" tabindex="0">mercati</a>
+            <a href="<?php echo url('it/mercati'); ?>" tabindex="0">mercati</a>
           </li> -->
           <li class="nav__item has-submenu">
             <a href="#chi-siamo" tabindex="0">chi siamo</a>
             <ul class="nav__submenu">
-              <li><a href="<?php echo BASE_PATH; ?>/it/team" tabindex="0">NOI</a></li>
-              <li><a href="<?php echo BASE_PATH; ?>/it/partners" tabindex="0">I Nostri Partner</a></li>
+              <li><a href="<?php echo url('it/team'); ?>" tabindex="0">NOI</a></li>
+              <li><a href="<?php echo url('it/partners'); ?>" tabindex="0">I Nostri Partner</a></li>
             </ul>
           </li>
           <li class="nav__item has-submenu">
             <a href="#contatti" tabindex="0">contatti</a>
             <ul class="nav__submenu">
-              <li><a href="<?php echo BASE_PATH; ?>/it/contacts" tabindex="0">Contattaci</a></li>
-              <li><a href="<?php echo BASE_PATH; ?>/it/lavora-con-noi" tabindex="0">Lavora con noi</a></li>
+              <li><a href="<?php echo url('it/contacts'); ?>" tabindex="0">Contattaci</a></li>
+              <li><a href="<?php echo url('it/lavora-con-noi'); ?>" tabindex="0">Lavora con noi</a></li>
             </ul>
           </li>
         </ul>

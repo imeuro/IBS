@@ -50,7 +50,7 @@
 
         <p>Hai domande sui nostri servizi o vuoi saperne di più su come possiamo aiutarti? Compila il form sottostante e ti risponderemo al più presto.</p>
 
-        <form id="contact-form" class="contact-form" action="<?php echo BASE_PATH; ?>/process-contact.php" method="POST" novalidate>
+        <form id="contact-form" class="contact-form" action="<?php echo url('process-contact.php'); ?>" method="POST" novalidate>
           
           <!-- Campo di controllo automatico -->
           <div class="form-field-extra">
@@ -133,7 +133,7 @@
               <label class="checkbox-label">
                 <input type="checkbox" id="privacy" name="privacy" required aria-required="true">
                 <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Accetto l'<a href="<?php echo BASE_PATH; ?>/it/privacy-cookie-policy.php" target="_blank" rel="noopener">informativa sulla privacy</a> e autorizzo il trattamento dei miei dati personali <span class="required">*</span></span>
+                <span class="checkbox-text">Accetto l'<a href="<?php echo url('it/privacy-cookie-policy.php'); ?>" target="_blank" rel="noopener">informativa sulla privacy</a> e autorizzo il trattamento dei miei dati personali <span class="required">*</span></span>
               </label>
             </div>
           </div>
@@ -157,7 +157,7 @@
   <?php include INCLUDES_PATH . '/it/footer.php'; ?>
 
   <!-- Scripts - Optimized for LCP -->
-  <script src="<?php echo assetWithVersion('assets/js/script.js'); ?>" type="module" defer></script>
+  <script src="<?php echo assetWithVersionSafe('js/script.js'); ?>" type="module" defer></script>
   
   <!-- Google Analytics - Non-blocking -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CC61R12ZY"></script>
