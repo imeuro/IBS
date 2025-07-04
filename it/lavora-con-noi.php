@@ -32,7 +32,6 @@
   <meta name="twitter:description" content="Unisciti al team IBS Lab! Opportunità di carriera nel settore banking solutions e product management."
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   
-  <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/hero/hero1.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
   <?php include INCLUDES_PATH . '/it/head.php'; ?>
 </head>
@@ -49,6 +48,8 @@
         <hr class="ibs__divider" />
 
         <p>Unisciti al nostro team! Invia la tua candidatura compilando il form sottostante e allegando il tuo CV. Valuteremo il tuo profilo e ti contatteremo per le opportunità più in linea con le tue competenze.</p>
+
+        <p class="form-note"><span class="required">*</span> I campi contrassegnati da asterisco sono obbligatori</p>
 
         <form id="job-application-form" class="contact-form" action="<?php echo url('process-job-application.php'); ?>" method="POST" enctype="multipart/form-data" novalidate>
           

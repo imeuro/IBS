@@ -32,7 +32,6 @@
   <meta name="twitter:description" content="Soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs.">
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   
-  <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/hero/hero1.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
   <?php include INCLUDES_PATH . '/it/head.php'; ?>
 </head>
@@ -49,6 +48,8 @@
         <hr class="ibs__divider" />
 
         <p>Hai domande sui nostri servizi o vuoi saperne di più su come possiamo aiutarti? Compila il form sottostante e ti risponderemo al più presto.</p>
+
+        <p class="form-note"><span class="required">*</span> I campi contrassegnati da asterisco sono obbligatori</p>
 
         <form id="contact-form" class="contact-form" action="<?php echo url('process-contact.php'); ?>" method="POST" novalidate>
           

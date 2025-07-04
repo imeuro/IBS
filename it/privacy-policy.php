@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>Privacy e Cookie Policy - IBS Lab S.r.l.</title>
-  <meta name="description" content="Informativa sulla privacy e cookie policy di IBS Lab S.r.l. Scopri come trattiamo i tuoi dati personali in conformità al GDPR.">
-  <meta name="keywords" content="privacy policy, cookie policy, GDPR, IBS Lab, trattamento dati personali">
+  <title>Privacy Policy - IBS Lab S.r.l.</title>
+  <meta name="description" content="Informativa sulla privacy di IBS Lab S.r.l. Scopri come trattiamo i tuoi dati personali in conformità al GDPR.">
+  <meta name="keywords" content="privacy policy, GDPR, IBS Lab, trattamento dati personali">
   <meta name="author" content="IBS Lab S.r.l.">
   <meta name="robots" content="index, follow">
   
@@ -18,8 +18,8 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo absoluteUrl(); ?>">
-  <meta property="og:title" content="Privacy e Cookie Policy - IBS Lab S.r.l.">
-  <meta property="og:description" content="Informativa sulla privacy e cookie policy di IBS Lab S.r.l.">
+  <meta property="og:title" content="Privacy Policy - IBS Lab S.r.l.">
+  <meta property="og:description" content="Informativa sulla privacy di IBS Lab S.r.l.">
   <meta property="og:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   <meta property="og:site_name" content="IBS Lab">
   <meta property="og:locale" content="it_IT">
@@ -27,21 +27,20 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="<?php echo absoluteUrl(); ?>">
-  <meta name="twitter:title" content="Privacy e Cookie Policy - IBS Lab S.r.l.">
-  <meta name="twitter:description" content="Informativa sulla privacy e cookie policy di IBS Lab S.r.l.">
+  <meta name="twitter:title" content="Privacy Policy - IBS Lab S.r.l.">
+  <meta name="twitter:description" content="Informativa sulla privacy di IBS Lab S.r.l.">
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   
-  <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/hero/hero1.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
   <?php include INCLUDES_PATH . '/it/head.php'; ?>
 </head>
-<body class="page" data-page="cookie-policy">
+<body class="page" data-page="privacy-policy">
   
   <?php include INCLUDES_PATH . '/it/header.php'; ?>
 
   <main>
     <section id="privacy-policy" class="section section--light" aria-labelledby="privacy-policy-heading">
-      <h1 id="privacy-policy-heading" class="section__title">INFORMATIVA SULLA PRIVACY E COOKIE POLICY</h1>
+      <h1 id="privacy-policy-heading" class="section__title">INFORMATIVA SULLA PRIVACY</h1>
 
       <hr class="ibs__divider" />
       
@@ -97,50 +96,10 @@
       </ul>
       <p>Per esercitare i tuoi diritti, contattaci all'indirizzo: info@ibslab.eu</p>
 
-      <h2>6. COOKIE POLICY</h2>
-
-      <h3>Cosa sono i cookie</h3>
-      <p>I cookie sono piccoli file di testo che i siti visitati inviano al terminale dell'utente, dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla visita successiva.</p>
-
-      <h3>Cookie utilizzati su questo sito</h3>
-
-      <h4>Cookie tecnici (non richiedono consenso)</h4>
-      <ul class="section__list">
-        <li><strong>Cookie di sessione:</strong> Necessari per il funzionamento del sito</li>
-        <li><strong>Cookie di sicurezza:</strong> Per garantire la sicurezza durante la navigazione</li>
-      </ul>
-
-      <h4>Cookie di profilazione e marketing (richiedono consenso)</h4>
-      <ul class="section__list">
-        <li><strong>Google Analytics:</strong> Per analizzare le statistiche di utilizzo del sito in forma anonima</li>
-        <li><strong>ID cookie:</strong> G-3CC61R12ZY</li>
-        <li><strong>Finalità:</strong> Comprendere come gli utenti utilizzano il sito per migliorarne le funzionalità</li>
-        <li><strong>Durata:</strong> 26 mesi</li>
-        <li><strong>Titolare:</strong> Google LLC</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
-      </ul>
-
-      <h3>Gestione dei cookie</h3>
-      <p>Puoi gestire le tue preferenze sui cookie:</p>
-      <ul class="section__list">
-        <li><strong>Accettando:</strong> I cookie verranno installati per migliorare la tua esperienza di navigazione</li>
-        <li><strong>Rifiutando:</strong> Solo i cookie tecnici necessari verranno utilizzati</li>
-        <li><strong>Tramite browser:</strong> Puoi modificare le impostazioni del tuo browser per accettare/rifiutare i cookie</li>
-      </ul>
-
-      <h3>Come disabilitare i cookie</h3>
-      <p>Puoi disabilitare i cookie direttamente dal tuo browser:</p>
-      <ul class="section__list">
-        <li><strong>Chrome:</strong> Impostazioni > Privacy e sicurezza > Cookie</li>
-        <li><strong>Firefox:</strong> Opzioni > Privacy e sicurezza > Cookie e dati dei siti web</li>
-        <li><strong>Safari:</strong> Preferenze > Privacy > Cookie e dati dei siti web</li>
-        <li><strong>Edge:</strong> Impostazioni > Cookie e autorizzazioni sito</li>
-      </ul>
-
-      <h2>7. MODIFICHE ALLA PRIVACY POLICY</h2>
+      <h2>6. MODIFICHE ALLA PRIVACY POLICY</h2>
       <p>Questa informativa può essere aggiornata periodicamente. Ti invitiamo a consultare regolarmente questa pagina per essere sempre informato su come trattiamo i tuoi dati.</p>
 
-      <h2>8. CONTATTI</h2>
+      <h2>7. CONTATTI</h2>
       <p>Per qualsiasi domanda relativa a questa Privacy Policy, contattaci:</p>
       <ul class="section__list">
         <li><strong>Email:</strong> info@ibslab.eu</li>
@@ -156,14 +115,5 @@
 
   <!-- Scripts - Optimized for LCP -->
   <script src="<?php echo JS_PATH; ?>/script.js" type="module" defer></script>
-  
-  <!-- Google Analytics - Non-blocking -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CC61R12ZY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-3CC61R12ZY');
-  </script>
 </body>
 </html> 

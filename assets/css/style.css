@@ -103,7 +103,7 @@ body {
 
 @media (min-width: 1200px) {
   .header__container {
-    max-width: 1200px;
+    max-width: 1440px;
   }
 }
 
@@ -446,7 +446,7 @@ body {
 }
 
 .hero__container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 1rem;
   position: relative;
@@ -556,30 +556,36 @@ body {
 }
 
 /* Cookie Policy */
-.page[data-page="cookie-policy"] .section h2 {
+.page[data-page="cookie-policy"] .section h2,
+.page[data-page="privacy-policy"] .section h2 {
   margin-top: 2.5rem;
   font-size: 1.875rem;
 }
 
-.page[data-page="cookie-policy"] .section h3 {
+.page[data-page="cookie-policy"] .section h3,
+.page[data-page="privacy-policy"] .section h3    {
   color: rgb(var(--giallo));
   margin-top: 1.5rem;
 }
 
-.page[data-page="cookie-policy"] ul.section__list {
+.page[data-page="cookie-policy"] ul.section__list,
+.page[data-page="privacy-policy"] ul.section__list {
   margin-top: 0;
 }
 
-.page[data-page="cookie-policy"] .section__list li {
+.page[data-page="cookie-policy"] .section__list li,
+.page[data-page="privacy-policy"] .section__list li {
   padding-top: 0;
 }
 
-.page[data-page="cookie-policy"] .section__list li::before {
+.page[data-page="cookie-policy"] .section__list li::before,
+.page[data-page="privacy-policy"] .section__list li::before {
   top: 0.6rem;
 }
 
-.page[data-page="cookie-policy"] a {
-  color: rgb(var(--bianco));
+.page[data-page="cookie-policy"] a,
+.page[data-page="privacy-policy"] a {
+  color: rgb(var(--giallo));
 }
 
 
@@ -708,7 +714,7 @@ body {
 
 @media (min-width: 1200px) {
   .section {
-    max-width: 1200px;
+    max-width: 1440px;
   }
 
   section#soluzioni {
@@ -847,7 +853,7 @@ body {
 
 @media (min-width: 1200px) {
   .footer__columns {
-    max-width: 1200px;
+    max-width: 1440px;
   }
 }
 
@@ -1190,6 +1196,7 @@ body {
 .people-pics img {
   width: 115px;
   max-width: 100%;
+  border-radius: 4px;
 }
 
 section .people-name * {

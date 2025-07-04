@@ -1,8 +1,8 @@
   <div class="topbar" aria-label="Selezione lingua">
     <div class="topbar__lang">
-        <a href="/en" title="Switch to English version" tabindex="0" hreflang="en"><img src="https://hatscripts.github.io/circle-flags/flags/uk.svg" alt="English flag" title="English" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
-        <a href="/" title="Versione italiana" tabindex="0" hreflang="it"><img src="https://hatscripts.github.io/circle-flags/flags/it.svg" alt="Bandiera italiana" title="Italiano" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
-        <a href="/es" title="Cambiar a versión en español" tabindex="0" hreflang="es"><img src="https://hatscripts.github.io/circle-flags/flags/es.svg" alt="Bandera española" title="Español" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
+        <a href="<?php echo BASE_PATH; ?>/en/" title="Switch to English version" tabindex="0" hreflang="en"><img src="<?php echo IMAGES_PATH; ?>/uk.svg" alt="English flag" title="English" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
+        <a href="<?php echo BASE_PATH; ?>/" title="Versione italiana" tabindex="0" hreflang="it"><img src="<?php echo IMAGES_PATH; ?>/it.svg" alt="Bandiera italiana" title="Italiano" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
+        <a href="<?php echo BASE_PATH; ?>/es/" title="Cambiar a versión en español" tabindex="0" hreflang="es"><img src="<?php echo IMAGES_PATH; ?>/es.svg" alt="Bandera española" title="Español" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
     </div>
   </div>
   
