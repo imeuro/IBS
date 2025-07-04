@@ -34,11 +34,11 @@
   
   <link rel="preload" as="image" href="../assets/img/hero/hero1.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="../assets/img/IBS_logo.png" fetchpriority="high">
-  <?php include INCLUDES_PATH . '/it/head.php'; ?>
+  <?php include INCLUDES_PATH . '/en/head.php'; ?>
 </head>
 <body class="home page" data-page="home">
   
-  <?php include INCLUDES_PATH . '/it/header.php'; ?>
+  <?php include INCLUDES_PATH . '/en/header.php'; ?>
 
   <main>
     <!-- Hero Section -->
@@ -110,8 +110,8 @@
     -->
   </main>
   
-  <!-- Footer -->
-  <?php include INCLUDES_PATH . '/it/footer.php'; ?>
+      <!-- Footer -->
+    <?php include INCLUDES_PATH . '/en/footer.php'; ?>
 
   <!-- Scripts - Optimized for LCP -->
   <script src="<?php echo JS_PATH; ?>/script.js" type="module" defer></script>

@@ -19,27 +19,27 @@
       <nav class="header__nav" aria-label="Navigazione principale">
         <ul class="nav__list">
           <li class="nav__item has-submenu">
-            <a href="#soluzioni" tabindex="0">soluzioni</a>
+            <a href="#solutions" tabindex="0">Solutions</a>
             <ul class="nav__submenu">
                       <li><a href="<?php echo url('en/value-proposition'); ?>" tabindex="0">Value Proposition</a></li>
         <li><a href="<?php echo url('en/plm-pog'); ?>" tabindex="0">PLM | POG</a></li>
             </ul>
           </li>
           <!-- <li class="nav__item">
-            <a href="<?php echo url('en/mercati'); ?>" tabindex="0">mercati</a>
+            <a href="<?php // echo url('en/mercati'); ?>" tabindex="0">mercati</a>
           </li> -->
           <li class="nav__item has-submenu">
-            <a href="#chi-siamo" tabindex="0">chi siamo</a>
+            <a href="#chi-siamo" tabindex="0">Who we are</a>
             <ul class="nav__submenu">
-                      <li><a href="<?php echo url('en/team'); ?>" tabindex="0">NOI</a></li>
-        <li><a href="<?php echo url('en/partners'); ?>" tabindex="0">I Nostri Partner</a></li>
+                      <li><a href="<?php echo url('en/team'); ?>" tabindex="0">WE</a></li>
+        <li><a href="<?php echo url('en/partners'); ?>" tabindex="0">Our Partners</a></li>
             </ul>
           </li>
           <li class="nav__item has-submenu">
-            <a href="#contatti" tabindex="0">contatti</a>
+            <a href="#contatti" tabindex="0">contacs</a>
             <ul class="nav__submenu">
-                      <li><a href="<?php echo url('en/contacts'); ?>" tabindex="0">Contattaci</a></li>
-        <li><a href="<?php echo url('en/lavora-con-noi'); ?>" tabindex="0">Lavora con noi</a></li>
+                      <li><a href="<?php echo url('en/contacts'); ?>" tabindex="0">Contact us</a></li>
+        <li><a href="<?php echo url('en/lavora-con-noi'); ?>" tabindex="0">Work with us</a></li>
             </ul>
           </li>
         </ul>

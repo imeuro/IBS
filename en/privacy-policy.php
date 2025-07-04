@@ -32,11 +32,11 @@
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
-  <?php include INCLUDES_PATH . '/it/head.php'; ?>
+  <?php include INCLUDES_PATH . '/en/head.php'; ?>
 </head>
 <body class="page" data-page="privacy-policy">
   
-  <?php include INCLUDES_PATH . '/it/header.php'; ?>
+  <?php include INCLUDES_PATH . '/en/header.php'; ?>
 
   <main>
     <section id="privacy-policy" class="section section--light" aria-labelledby="privacy-policy-heading">
@@ -111,7 +111,7 @@
   </main>
   
   <!-- Footer -->
-  <?php include INCLUDES_PATH . '/it/footer.php'; ?>
+  <?php include INCLUDES_PATH . '/en/footer.php'; ?>
 
   <!-- Scripts - Optimized for LCP -->
   <script src="<?php echo JS_PATH; ?>/script.js" type="module" defer></script>
