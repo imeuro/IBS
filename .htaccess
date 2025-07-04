@@ -1,16 +1,22 @@
 # Abilita il rewrite engine
 RewriteEngine On
 
-# Imposta la base per le regole di rewrite
+# Imposta la base per il progetto
 RewriteBase /IBS/
 
-# Regola per la homepage
-RewriteCond %{REQUEST_URI} !\.php$
-RewriteRule ^$ it/index.php [END]
+# Regola per le pagine PHP delle lingue (es: /it/contacts -> /it/contacts.php)
+# IMPORTANTE: controlla che il file .php esista prima di reindirizzare
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(it|en|es)/([^/]+)/?$ $1/$2.php [L,QSA]
 
-# Regola per le pagine PHP (solo se non è già un file PHP)
-RewriteCond %{REQUEST_URI} !\.php$
-RewriteRule ^it/([^/]+)/?$ it/$1.php [END]
+# Homepage per lingua (es: /it/ -> /it/index.php)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(it|en|es)/?$ $1/index.php [L,QSA]
+
+# Homepage di default (redirect su italiano)
+RewriteRule ^$ it/index.php [L,QSA]
 
 # Imposta il charset predefinito
 AddDefaultCharset UTF-8
@@ -50,46 +56,4 @@ AddDefaultCharset UTF-8
     ExpiresByType image/svg+xml "access plus 1 year"
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
-</IfModule>
-
-# Determina se siamo in ambiente di sviluppo
-RewriteCond %{HTTP_HOST} ^localhost$ [OR]
-RewriteCond %{HTTP_HOST} \.dev$
-SetEnvIf %{HTTP_HOST} ^localhost$ IS_DEV=1
-SetEnvIf %{HTTP_HOST} \.dev$ IS_DEV=1
-
-# Regola per le pagine PHP nelle cartelle di lingua in ambiente di sviluppo (con e senza slash finale)
-# Es: /IBS/it/value-proposition/ -> /IBS/it/value-proposition.php
-# Es: /IBS/it/value-proposition -> /IBS/it/value-proposition.php
-RewriteCond %{ENV:IS_DEV} 1
-RewriteRule ^IBS/([a-z]{2})/([^/]+)/?$ IBS/$1/$2.php [L,QSA]
-
-# Regola per le pagine PHP nelle cartelle di lingua in produzione (con e senza slash finale)
-# Es: /it/value-proposition/ -> /it/value-proposition.php
-# Es: /it/value-proposition -> /it/value-proposition.php
-RewriteCond %{ENV:IS_DEV} !1
-RewriteRule ^([a-z]{2})/([^/]+)/?$ $1/$2.php [L,QSA]
-
-# Regola per la homepage in ambiente di sviluppo
-RewriteCond %{ENV:IS_DEV} 1
-RewriteRule ^IBS/?$ IBS/it/index.php [L,QSA]
-
-# Regola per la homepage in produzione
-RewriteCond %{ENV:IS_DEV} !1
-RewriteRule ^$ it/index.php [L,QSA]
-
-# Regola per le cartelle di lingua senza pagina specificata in ambiente di sviluppo
-# Es: /IBS/it/ -> /IBS/it/index.php
-RewriteCond %{ENV:IS_DEV} 1
-RewriteRule ^IBS/([a-z]{2})/?$ IBS/$1/index.php [L,QSA]
-
-# Regola per le cartelle di lingua senza pagina specificata in produzione
-# Es: /it/ -> /it/index.php
-RewriteCond %{ENV:IS_DEV} !1
-RewriteRule ^([a-z]{2})/?$ $1/index.php [L,QSA]
-
-# Forza HTTPS in produzione
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} !^localhost [NC]
-RewriteCond %{HTTP_HOST} !\.dev$ [NC]
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+</IfModule> 
