@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <?php require_once __DIR__ . '/../config.php'; ?>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
   <title>Privacy Policy - IBS Lab S.r.l.</title>
-  <meta name="description" content="Informativa sulla privacy di IBS Lab S.r.l. Scopri come trattiamo i tuoi dati personali in conformità al GDPR.">
-  <meta name="keywords" content="privacy policy, GDPR, IBS Lab, trattamento dati personali">
+  <meta name="description" content="Privacy policy of IBS Lab S.r.l. Discover how we process your personal data in compliance with GDPR.">
+  <meta name="keywords" content="privacy policy, GDPR, IBS Lab, personal data processing">
   <meta name="author" content="IBS Lab S.r.l.">
   <meta name="robots" content="index, follow">
   
@@ -19,16 +19,16 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo absoluteUrl(); ?>">
   <meta property="og:title" content="Privacy Policy - IBS Lab S.r.l.">
-  <meta property="og:description" content="Informativa sulla privacy di IBS Lab S.r.l.">
+  <meta property="og:description" content="Privacy policy of IBS Lab S.r.l.">
   <meta property="og:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   <meta property="og:site_name" content="IBS Lab">
-  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale" content="en_US">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="<?php echo absoluteUrl(); ?>">
   <meta name="twitter:title" content="Privacy Policy - IBS Lab S.r.l.">
-  <meta name="twitter:description" content="Informativa sulla privacy di IBS Lab S.r.l.">
+  <meta name="twitter:description" content="Privacy policy of IBS Lab S.r.l.">
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
@@ -40,73 +40,73 @@
 
   <main>
     <section id="privacy-policy" class="section section--light" aria-labelledby="privacy-policy-heading">
-      <h1 id="privacy-policy-heading" class="section__title">INFORMATIVA SULLA PRIVACY</h1>
+      <h1 id="privacy-policy-heading" class="section__title">PRIVACY POLICY</h1>
 
       <hr class="ibs__divider" />
       
-      <p><strong>Titolare del trattamento:</strong> IBSlab S.r.l.<br>
-      <strong>Sede legale:</strong> Via Paolo Da Cannobio 9 - 20122 Milano<br>
+      <p><strong>Data Controller:</strong> IBSlab S.r.l.<br>
+      <strong>Registered office:</strong> Via Paolo Da Cannobio 9 - 20122 Milan<br>
       <strong>Email:</strong> info@ibslab.eu<br>
       <!-- <strong>PEC:</strong> info@ibslab.eu</p> -->
 
-      <h2>1. FINALITÀ DEL TRATTAMENTO</h2>
-      <p>I tuoi dati personali vengono trattati per le seguenti finalità:</p>
+      <h2>1. PURPOSE OF PROCESSING</h2>
+      <p>Your personal data is processed for the following purposes:</p>
 
-      <h3>a) Richieste di contatto</h3>
+      <h3>a) Contact requests</h3>
       <ul class="section__list">
-        <li><strong>Finalità:</strong> Rispondere alle richieste di informazioni e contatti tramite il modulo presente sul sito</li>
-        <li><strong>Base giuridica:</strong> Consenso dell'interessato (art. 6, par. 1, lett. a GDPR)</li>
-        <li><strong>Dati trattati:</strong> Nome, cognome, email, messaggio e altri dati volontariamente forniti</li>
+        <li><strong>Purpose:</strong> Responding to requests for information and contact via the form on the website</li>
+        <li><strong>Legal basis:</strong> Consent of the data subject (Art. 6(1)(a) GDPR)</li>
+        <li><strong>Data processed:</strong> First name, last name, email, message and other data voluntarily provided</li>
       </ul>
 
-      <h3>b) Candidature spontanee</h3>
+      <h3>b) Unsolicited applications</h3>
       <ul class="section__list">
-        <li><strong>Finalità:</strong> Gestione delle candidature per posizioni lavorative, valutazione del profilo professionale</li>
-        <li><strong>Base giuridica:</strong> Consenso dell'interessato per l'invio della candidatura (art. 6, par. 1, lett. a GDPR)</li>
-        <li><strong>Dati trattati:</strong> Nome, cognome, email, curriculum vitae e altri dati contenuti nei documenti inviati</li>
+        <li><strong>Purpose:</strong> Management of applications for job positions, evaluation of professional profile</li>
+        <li><strong>Legal basis:</strong> Consent of the data subject for sending the application (art. 6, par. 1, lett. a GDPR)</li>
+        <li><strong>Data processed:</strong> First name, last name, email, curriculum vitae and other data contained in the documents sent</li>
       </ul>
 
-      <h2>2. MODALITÀ DI TRATTAMENTO</h2>
-      <p>I dati personali sono trattati con strumenti informatici e/o telematici, con modalità organizzative e logiche strettamente correlate alle finalità indicate. Vengono applicate misure di sicurezza adeguate per prevenire la perdita, l'uso illecito o non corretto dei dati.</p>
+      <h2>2. PROCESSING METHODS</h2>
+      <p>Personal data are processed by computer and/or telematic means, with organisational methods and logic strictly related to the purposes indicated. Appropriate security measures are applied to prevent loss, illicit or incorrect use of the data.</p>
 
-      <h2>3. CONSERVAZIONE DEI DATI</h2>
+      <h2>3. DATA RETENTION</h2>
       <ul class="section__list">
-        <li><strong>Richieste di contatto:</strong> I dati vengono conservati per il tempo necessario a evadere la richiesta e comunque non oltre 24 mesi</li>
-        <li><strong>Candidature:</strong> I dati vengono conservati per un periodo massimo di 2 anni dalla ricezione, salvo diversa comunicazione da parte dell'interessato</li>
+        <li><strong>Contact requests:</strong> Data are kept for the time necessary to process the request and in any case no longer than 24 months</li>
+        <li><strong>Applications:</strong> Data is retained for a maximum period of 2 years after receipt, unless otherwise notified by the data subject</li>
       </ul>
 
-      <h2>4. COMUNICAZIONE E DIFFUSIONE</h2>
-      <p>I dati personali non saranno diffusi e potranno essere comunicati esclusivamente a:</p>
+      <h2>4. COMMUNICATION AND DISSEMINATION</h2>
+      <p>Personal data shall not be disseminated and may only be communicated to:</p>
       <ul class="section__list">
-        <li>Soggetti autorizzati al trattamento per finalità di assistenza e manutenzione del sistema informatico</li>
-        <li>Consulenti e professionisti, in qualità di responsabili del trattamento</li>
-        <li>Autorità competenti per adempimenti di legge</li>
+        <li>Persons authorised to process data for the purposes of assistance and maintenance of the computer system</li>
+        <li>Consultants and professionals, in their capacity as data processors</li>
+        <li>Competent authorities for compliance with the law</li>
       </ul>
 
-      <h2>5. DIRITTI DELL'INTERESSATO</h2>
-      <p>Ai sensi degli artt. 15-22 del GDPR, hai il diritto di:</p>
+      <h2>5. RIGHTS OF THE INTERESTED PARTY</h2>
+      <p>Pursuant to Articles 15-22 of the GDPR, you have the right to:</p>
       <ul class="section__list">
-        <li>Accedere ai tuoi dati personali</li>
-        <li>Rettificare dati inesatti o integrarli</li>
-        <li>Cancellare i dati (diritto all'oblio)</li>
-        <li>Limitare il trattamento</li>
-        <li>Portabilità dei dati</li>
-        <li>Opporti al trattamento</li>
-        <li>Revocare il consenso in qualsiasi momento</li>
+        <li>Access your personal data</li>
+        <li>Rectify inaccurate data or supplement them</li>
+        <li>Delete data (right to be forgotten)</li>
+        <li>Restrict processing</li>
+        <li>Data portability</li>
+        <li>Object to processing</li>
+        <li>Withdraw consent at any time</li>
       </ul>
-      <p>Per esercitare i tuoi diritti, contattaci all'indirizzo: info@ibslab.eu</p>
+      <p>To exercise your rights, please contact us at: info@ibslab.eu</p>
 
-      <h2>6. MODIFICHE ALLA PRIVACY POLICY</h2>
-      <p>Questa informativa può essere aggiornata periodicamente. Ti invitiamo a consultare regolarmente questa pagina per essere sempre informato su come trattiamo i tuoi dati.</p>
+      <h2>6. CHANGES TO THE PRIVACY POLICY</h2>
+      <p>This policy may be updated periodically. We encourage you to check this page regularly to stay informed about how we treat your data.</p>
 
-      <h2>7. CONTATTI</h2>
-      <p>Per qualsiasi domanda relativa a questa Privacy Policy, contattaci:</p>
+      <h2>7. CONTACT</h2>
+      <p>If you have any questions regarding this Privacy Policy, please contact us:</p>
       <ul class="section__list">
         <li><strong>Email:</strong> info@ibslab.eu</li>
-        <li><strong>Indirizzo:</strong> Via Paolo Da Cannobio 9 - 20122 Milano</li>
+        <li><strong>Address:</strong> Via Paolo Da Cannobio 9 - 20122 Milan</li>
       </ul>
 
-      <p><strong>Ultimo aggiornamento:</strong> 30 giugno 2025</p>
+      <p><strong>Last updated:</strong> 30 June 2025</p>
     </section>
   </main>
   

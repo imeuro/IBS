@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="es">
 <?php require_once __DIR__ . '/../config.php'; ?>
 <head>
   <meta charset="UTF-8">
@@ -23,7 +23,7 @@
   <meta property="og:description" content="Soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs per Product Lifecycle Management.">
   <meta property="og:image" content="https://www.ibslab.eu/assets/img/IBS_logo.png">
   <meta property="og:site_name" content="IBS Lab">
-  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale" content="es_ES">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">

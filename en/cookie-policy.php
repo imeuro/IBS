@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <?php require_once __DIR__ . '/../config.php'; ?>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
   <title>Cookie Policy - IBS Lab S.r.l.</title>
-  <meta name="description" content="Cookie policy di IBS Lab S.r.l. Scopri quali cookie utilizziamo e come gestirli.">
-  <meta name="keywords" content="cookie policy, cookie, IBS Lab, gestione cookie">
+  <meta name="description" content="Cookie policy of IBS Lab S.r.l. Discover which cookies we use and how to manage them.">
+  <meta name="keywords" content="cookie policy, cookies, IBS Lab, cookie management">
   <meta name="author" content="IBS Lab S.r.l.">
   <meta name="robots" content="index, follow">
   
@@ -19,16 +19,16 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo absoluteUrl(); ?>">
   <meta property="og:title" content="Cookie Policy - IBS Lab S.r.l.">
-  <meta property="og:description" content="Cookie policy di IBS Lab S.r.l. Scopri quali cookie utilizziamo e come gestirli.">
+  <meta property="og:description" content="Cookie policy of IBS Lab S.r.l. Discover which cookies we use and how to manage them.">
   <meta property="og:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   <meta property="og:site_name" content="IBS Lab">
-  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale" content="en_US">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="<?php echo absoluteUrl(); ?>">
   <meta name="twitter:title" content="Cookie Policy - IBS Lab S.r.l.">
-  <meta name="twitter:description" content="Cookie policy di IBS Lab S.r.l. Scopri quali cookie utilizziamo e come gestirli.">
+  <meta name="twitter:description" content="Cookie policy of IBS Lab S.r.l. Discover which cookies we use and how to manage them.">
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
@@ -44,45 +44,45 @@
 
       <hr class="ibs__divider" />
       
-      <h2>Cosa sono i cookie</h2>
-      <p>I cookie sono piccoli file di testo che i siti visitati inviano al terminale dell'utente, dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla visita successiva.</p>
+      <h2>What are cookies</h2>
+      <p>Cookies are small text files that sites you visit send to your terminal, where they are stored and then retransmitted to the same sites on your next visit.</p>
 
-      <h2>Cookie utilizzati su questo sito</h2>
+      <h2>Cookies used on this site</h2>
 
-      <h3>Cookie tecnici (non richiedono consenso)</h3>
+      <h3>Technical cookies (do not require consent)</h3>
       <ul class="section__list">
-        <li><strong>Cookie di sessione:</strong> Necessari per il funzionamento del sito</li>
-        <li><strong>Cookie di sicurezza:</strong> Per garantire la sicurezza durante la navigazione</li>
+        <li><strong>Session cookies:</strong> Necessary for the operation of the site</li>
+        <li><strong>Security cookies:</strong> To ensure security while browsing</li>
       </ul>
 
-      <h3>Cookie di profilazione e marketing (richiedono consenso)</h3>
+      <h3>Profiling and marketing cookies (require consent)</h3>
       <ul class="section__list">
-        <li><strong>Google Analytics:</strong> Per analizzare le statistiche di utilizzo del sito in forma anonima</li>
-        <li><strong>ID cookie:</strong> G-3CC61R12ZY</li>
-        <li><strong>Finalità:</strong> Comprendere come gli utenti utilizzano il sito per migliorarne le funzionalità</li>
-        <li><strong>Durata:</strong> 26 mesi</li>
-        <li><strong>Titolare:</strong> Google LLC</li>
+        <li><strong>Google Analytics:</strong> To analyse site usage statistics anonymously</li>
+        <li><strong>Cookie ID:</strong> G-3CC61R12ZY</li>
+        <li><strong>Purpose:</strong> To understand how users use the site to improve functionality</li>
+        <li><strong>Duration:</strong> 26 months</li>
+        <li><strong>Owner:</strong> Google LLC</li>
         <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
       </ul>
 
-      <h2>Gestione dei cookie</h2>
-      <p>Puoi gestire le tue preferenze sui cookie:</p>
+      <h2>Managing cookies</h2>
+      <p>You can manage your cookie preferences:</p>
       <ul class="section__list">
-        <li><strong>Accettando:</strong> I cookie verranno installati per migliorare la tua esperienza di navigazione</li>
-        <li><strong>Rifiutando:</strong> Solo i cookie tecnici necessari verranno utilizzati</li>
-        <li><strong>Tramite browser:</strong> Puoi modificare le impostazioni del tuo browser per accettare/rifiutare i cookie</li>
+        <li><strong>Accepting:</strong> Cookies will be installed to improve your browsing experience</li>
+        <li><strong>Rejecting:</strong> Only necessary technical cookies will be used</li>
+        <li><strong>Via browser:</strong> You can change your browser settings to accept/reject cookies</li>
       </ul>
 
-      <h2>Come disabilitare i cookie</h2>
-      <p>Puoi disabilitare i cookie direttamente dal tuo browser:</p>
+      <h2>How to disable cookies</h2>
+      <p>You can disable cookies directly from your browser:</p>
       <ul class="section__list">
-        <li><strong>Chrome:</strong> Impostazioni > Privacy e sicurezza > Cookie</li>
-        <li><strong>Firefox:</strong> Opzioni > Privacy e sicurezza > Cookie e dati dei siti web</li>
-        <li><strong>Safari:</strong> Preferenze > Privacy > Cookie e dati dei siti web</li>
-        <li><strong>Edge:</strong> Impostazioni > Cookie e autorizzazioni sito</li>
+        <li><strong>Chrome:</strong> Settings > Privacy and Security > Cookies</li>
+        <li><strong>Firefox:</strong> Options > Privacy and security > Cookies and website data</li>
+        <li><strong>Safari:</strong> Preferences > Privacy > Cookies and website data</li>
+        <li><strong>Edge:</strong> Settings > Cookies and site permissions</li>
       </ul>
 
-      <p><strong>Ultimo aggiornamento:</strong> 30 giugno 2025</p>
+      <p><strong>Last update:</strong> June 30th, 2025</p>
     </section>
   </main>
   

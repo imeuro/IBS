@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php require_once __DIR__ . '/../config.php'; ?>
-<html lang="it">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
   <meta property="og:description" content="Unisciti al team IBS Lab! Opportunità di carriera nel settore banking solutions e product management. Invia la tua candidatura.">
   <meta property="og:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   <meta property="og:site_name" content="IBS Lab">
-  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale" content="es_ES">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">

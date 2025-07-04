@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <?php require_once __DIR__ . '/../config.php'; ?>
 <head>
   <meta charset="UTF-8">
@@ -23,7 +23,7 @@
   <meta property="og:description" content="Soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs per Product Lifecycle Management.">
   <meta property="og:image" content="https://www.ibslab.eu/assets/img/IBS_logo.png">
   <meta property="og:site_name" content="IBS Lab">
-  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale" content="en_US">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -53,15 +53,15 @@
       <div class="hero__container">
         <div class="hero__quotes-wrapper">
           <p class="hero__single-quote is-active">
-            "Senza dati si è solo un'altra persona con un'opinione"
+            "Without data you are just another person with an opinion"
             <span class="hero__single-quote-footer">WILLIAM EDWARDS DEMING</span>
           </p>
           <p class="hero__single-quote">
-            "Qualità è soddisfare le necessità del cliente e superare le sue stesse aspettative continuando a migliorarsi"
+            "Quality is meeting the customer's needs and exceeding his own expectations while continuing to improve"
             <span class="hero__single-quote-footer">WILLIAM EDWARDS DEMING</span>
           </p>
           <p class="hero__single-quote">
-            "Quale metodo usare? Quello che corrisponde alle vostre necessità."
+            "Which method to use? The one that corresponds to your needs"
             <span class="hero__single-quote-footer">WILLIAM EDWARDS DEMING</span>
           </p>
         </div>

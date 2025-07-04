@@ -1,7 +1,7 @@
 <footer id="contatti" class="footer" aria-labelledby="contatti-heading" role="contentinfo">
     <div class="footer__columns">
         <div class="footer__col">
-            <h2 id="contatti-heading">Contatti</h2>
+            <h2 id="contatti-heading">Contacts</h2>
             <address>
             <p class="footer__social-item"><a href="<?php echo BASE_PATH; ?>/en/contacts/" title="Invia una email a IBS Lab"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"
                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -34,4 +34,4 @@
     </div>
 </footer>
 
-<div class="copyright-bar" aria-label="Copyright">© <?php echo date('Y'); ?> IBS Lab S.r.l. Tutti i diritti riservati.</div>
+<div class="copyright-bar" aria-label="Copyright">© <?php echo date('Y'); ?> IBS Lab S.r.l. All rights reserved.</div>

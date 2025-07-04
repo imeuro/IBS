@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <?php require_once __DIR__ . '/../config.php'; ?>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>IBS Lab - Innovative Banking Solutions | Consulenza Finanziaria e Product Management</title>
-  <meta name="description" content="IBS Lab offre soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs in Italia, Svizzera e Spagna per Product Lifecycle Management.">
-  <meta name="keywords" content="banking solutions, product management, POG, product oversight governance, kore labs, consulenza finanziaria, lifecycle management, compliance bancaria">
+  <title>IBS Lab - Innovative Banking Solutions | Financial Consulting and Product Management</title>
+  <meta name="description" content="IBS Lab offers innovative solutions for managing the lifecycle of financial products. Official partner of Kore Labs in Italy, Switzerland and Spain for Product Lifecycle Management.">
+  <meta name="keywords" content="banking solutions, product management, POG, product oversight governance, kore labs, financial consulting, lifecycle management, banking compliance">
   <meta name="author" content="IBS Lab S.r.l.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
@@ -20,16 +20,16 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo absoluteUrl(); ?>">
   <meta property="og:title" content="IBS Lab - Innovative Banking Solutions">
-  <meta property="og:description" content="Soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs per Product Lifecycle Management.">
+  <meta property="og:description" content="Innovative solutions for managing the lifecycle of financial products. Official partner of Kore Labs for Product Lifecycle Management.">
   <meta property="og:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   <meta property="og:site_name" content="IBS Lab">
-  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale" content="en_US">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="<?php echo absoluteUrl(); ?>">
   <meta name="twitter:title" content="IBS Lab - Innovative Banking Solutions">
-  <meta name="twitter:description" content="Soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs.">
+  <meta name="twitter:description" content="Innovative solutions for managing the lifecycle of financial products. Official partner of Kore Labs.">
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
@@ -46,54 +46,54 @@
 
       <hr class="ibs__divider" />
       
-      <p>Offriamo soluzioni innovative e personalizzate che rispondano efficacemente alle esigenze specifiche dei nostri clienti, attraverso la digitalizzazione a 360° delle informazioni che consentono di ottimizzare i processi end-to-end di Product Oversight Governance e di Business Intelligence a supporto delle decisioni e al contenimento dei rischi. In dettaglio offriamo:</p>
+      <p>We offer innovative and customised solutions that effectively respond to our customers' specific needs, through the 360° digitisation of information to optimise end-to-end processes of Product Oversight Governance and Business Intelligence for decision support and risk containment. In detail, we offer:</p>
 
       <ul class="section__list">
         <li>
-          <strong class="section__list-title">Soluzioni personalizzate per una governance centralizzata</strong>
-          <p>Creiamo proposte su misura, superando la gestione per silos delle informazioni e garantendo la massima efficacia e impatto attraverso la visione integrata del portafoglio e processi POG coerenti.</p>
+          <strong class="section__list-title">Customised solutions for centralised governance</strong>
+          <p>We create tailor-made proposals, overcoming information silo management and ensuring maximum effectiveness and impact through an integrated portfolio view and consistent POG processes.</p>
         </li>
         <li>
-          <strong class="section__list-title">Innovazione continua e Compliance dinamica</strong>
-          <p>Investiamo costantemente per offrire soluzioni automatizzate, all'avanguardia e congruenti con le linee guida sempre più stringenti governate dalle autorità che garantiscano ai nostri clienti un vantaggio competitivo nella gestione dei rischi operativi e reputazionali.</p>
+          <strong class="section__list-title">Continuous innovation and dynamic compliance</strong>
+          <p>We are constantly investing to offer automated, state-of-the-art solutions congruent with the increasingly stringent guidelines governed by the authorities that provide our clients with a competitive advantage in managing operational and reputational risks.</p>
         </li>
         <li>
-          <strong class="section__list-title">Approccio collaborativo e integrato</strong>
-          <p>Lavoriamo a stretto contatto con i nostri clienti, instaurando un rapporto di fiducia e collaborazione reciproca per raggiungere insieme gli obiettivi prefissati di miglioramento del «time to market» e maggiore «engagement» e allineamento delle funzioni coinvolte.</p>
+          <strong class="section__list-title">Collaborative and integrated approach</strong>
+          <p>We work closely with our clients, establishing a relationship of mutual trust and collaboration to jointly achieve the set objectives of improved "time to market" and greater "engagement" and alignment of the functions involved.</p>
         </li>
         <li>
-          <strong class="section__list-title">Trasparenza e comunicazione</strong>
-          <p>Ci impegniamo a fornire un supporto costante e proattivo per garantire che i nostri clienti raggiungano i loro obiettivi e ottengano i risultati desiderati di prodotto in una logica di compliance dinamica e di totale trasparenza decisionale.</p>
+          <strong class="section__list-title">Transparency and communication</strong>
+          <p>We are committed to providing constant and proactive support to ensure that our customers achieve their objectives and obtain the desired product results in a dynamic compliance logic and total decision-making transparency.</p>
         </li>
       </ul>
     </section>
 
     <section id="value-proposition-content" class="section section--light" aria-labelledby="value-proposition-list-content">
       <p>
-      La gestione del ciclo di vita del prodotto in ambito finanziario è altamente regolamentata ma la gestione è spesso manuale ed inefficiente, con sistemi non connessi, data point multipli e ridondanti, processi frammentati, governance e reportistica incoerenti. 
+      Product lifecycle management in the financial sector is highly regulated but management is often manual and inefficient, with unconnected systems, multiple and redundant data points, fragmented processes, inconsistent governance and reporting. 
       </p>
 
-      <div class="value-proposition-graphic" aria-label="Rappresentazione grafica dei rischi, processi e soluzioni">
+      <div class="value-proposition-graphic" aria-label="Graphical representation of risks, processes and solutions">
         <!-- Colonna sinistra: Rischi e Processi -->
         <div class="vp-col vp-col--left value-proposition-graphic__col">
           <div class="vp-cell">
             <!-- Placeholder SVG icona rischio -->
-            <span class="vp-icon" aria-label="Attenzione" tabindex="0">
+            <span class="vp-icon" aria-label="Warning" tabindex="0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
             </span>
             <div class="vp-text">
-              <strong>ALTO RISCHIO DI SANZIONI</strong>
-              <span class="vp-desc">e danni alla reputazione in caso di evidenze non soddisfacenti</span>
+              <strong>HIGH RISK OF SANCTIONS</strong>
+              <span class="vp-desc">and damage to reputation in case of unsatisfactory evidence</span>
             </div>
           </div>
           <div class="vp-cell">
             <!-- Placeholder SVG icona processi lenti -->
-            <span class="vp-icon" aria-label="Processi lenti" tabindex="0">
+            <span class="vp-icon" aria-label="Slow processes" tabindex="0">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"/></svg>
             </span>
             <div class="vp-text">
-              <strong>PROCESSI LENTI</strong>
-              <span class="vp-desc">gestione manuale e tempi di commercializzazione più lunghi</span>
+              <strong>SLOW PROCESSES</strong>
+              <span class="vp-desc">manual management and longer time to market</span>
             </div>
           </div>
         </div>
@@ -113,12 +113,12 @@
         <!-- Colonna centrale: Testo -->
         <div class="vp-col vp-col--center value-proposition-graphic__col">
           <div class="vp-main-text">
-            ricerca di <strong>soluzioni digitali, modulari e configurabili</strong> per gestire e monitorare i prodotti in <strong>un ambiente controllato e integrato</strong> con una visione <strong>end-to-end</strong>
+            search for <strong>digital, modular and configurable solutions</strong> to manage and monitor products in a <strong>controlled and integrated environment</strong> with an <strong>end-to-end</strong> vision
           </div>
         </div>
         <!-- Colonna destra: Cloud di parole -->
         <div class="vp-col vp-col--right value-proposition-graphic__col">
-          <img src="<?php echo IMAGES_PATH; ?>/value-prop-cloud.png" alt="Cloud di parole: Product Lifecycle Management, strategy, workflow, data, process, service, PLM, Management, ecc." class="vp-cloud-img" loading="lazy">
+          <img src="<?php echo IMAGES_PATH; ?>/value-prop-cloud.png" alt="Word cloud: Product Lifecycle Management, strategy, workflow, data, process, service, PLM, Management, etc." class="vp-cloud-img" loading="lazy">
         </div>
       </div>
     </section>
