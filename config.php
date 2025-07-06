@@ -15,7 +15,7 @@
 // Configurazione ambiente
 define('INCLUDE_SERVER_NAME_IN_PATH', false); // SEMPRE false in produzione
 define('DEVELOPMENT_MODE', true); // Impostare a false in produzione
-define('DISABLE_CACHE_BUSTING', true); // Impostare a true per disabilitare cache busting in produzione
+define('DISABLE_CACHE_BUSTING', false); // Impostare a true per disabilitare cache busting in produzione
 
 // Funzione per determinare il basepath in base all'ambiente
 function getBasePath() {
