@@ -177,7 +177,7 @@ body {
   overflow-y: auto;
   transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .header__nav.is-open {
