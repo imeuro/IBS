@@ -1,7 +1,7 @@
 <footer id="contatti" class="footer" aria-labelledby="contatti-heading" role="contentinfo">
     <div class="footer__columns">
         <div class="footer__col">
-            <h2 id="contatti-heading">Contatti</h2>
+            <h2 id="contatti-heading">Contactos</h2>
             <address>
             <p class="footer__social-item"><a href="<?php echo BASE_PATH; ?>/es/contacts/" title="Invia una email a IBS Lab"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true"
                 viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -21,17 +21,17 @@
             <h2>IBSlab S.r.l.</h2>
             <p><strong>P.Iva:</strong> 13957350963<br>
             <strong>N° REA:</strong> MI – 2752937<br>
-            <strong>Sede legale:</strong> Via Paolo Da Cannobio 9 - 20122 Milano</p>
+            <strong>Sede legal:</strong> Via Paolo Da Cannobio 9 - 20122 Milán</p>
         </div>
         <div class="footer__divider" aria-hidden="true"></div>
         <div class="footer__col">
             <h3>&nbsp;</h3>
             <p>
-                <a href="<?php echo absoluteUrl(); ?>es/privacy-policy/">Privacy Policy</a><br><br>
-                <a href="<?php echo absoluteUrl(); ?>es/cookie-policy/">Cookie Policy</a>
+                <a href="<?php echo absoluteUrl(); ?>es/privacy-policy/">Política de privacidad</a><br><br>
+                <a href="<?php echo absoluteUrl(); ?>es/cookie-policy/">Política de cookies</a>
             </p>
         </div>
     </div>
 </footer>
 
-<div class="copyright-bar" aria-label="Copyright">© <?php echo date('Y'); ?> IBS Lab S.r.l. Tutti i diritti riservati.</div>
+<div class="copyright-bar" aria-label="Copyright">© <?php echo date('Y'); ?> IBS Lab S.r.l. Todos los derechos reservados.</div>

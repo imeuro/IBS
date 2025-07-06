@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>IBS Lab - Innovative Banking Solutions | Consulenza Finanziaria e Product Management</title>
-  <meta name="description" content="IBS Lab offre soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs in Italia, Svizzera e Spagna per Product Lifecycle Management.">
-  <meta name="keywords" content="banking solutions, product management, POG, product oversight governance, kore labs, consulenza finanziaria, lifecycle management, compliance bancaria">
+  <title>IBS Lab - Innovative Banking Solutions | Consultoría Financiera y Product Management</title>
+  <meta name="description" content="IBS Lab ofrece soluciones innovadoras para la gestión del ciclo de vida de productos financieros. Partner oficial de Kore Labs en Italia, Suiza y España para Product Lifecycle Management.">
+  <meta name="keywords" content="banking solutions, product management, POG, product oversight governance, kore labs, consultoría financiera, lifecycle management, compliance bancaria">
   <meta name="author" content="IBS Lab S.r.l.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
@@ -20,7 +20,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo absoluteUrl(); ?>">
   <meta property="og:title" content="IBS Lab - Innovative Banking Solutions">
-  <meta property="og:description" content="Soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs per Product Lifecycle Management.">
+  <meta property="og:description" content="Soluciones innovadoras para la gestión del ciclo de vida de productos financieros. Partner oficial de Kore Labs para Product Lifecycle Management.">
   <meta property="og:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   <meta property="og:site_name" content="IBS Lab">
   <meta property="og:locale" content="es_ES">
@@ -29,7 +29,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="<?php echo absoluteUrl(); ?>">
   <meta name="twitter:title" content="IBS Lab - Innovative Banking Solutions">
-  <meta name="twitter:description" content="Soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs.">
+  <meta name="twitter:description" content="Soluciones innovadoras para la gestión del ciclo de vida de productos financieros. Partner oficial de Kore Labs.">
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
   
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
@@ -43,11 +43,11 @@
     <!-- Soluzioni -->
     <section id="mercati" class="section section--light" aria-labelledby="mercati-heading">
 
-        <h1 id="mercati-heading" class="section__title">Mercati</h1>
+        <h1 id="mercati-heading" class="section__title">Mercados</h1>
 
         <hr class="ibs__divider" />
 
-        <p>pagina in allestimento</p>
+        <p>página en construcción</p>
         
     </section>
   </main>

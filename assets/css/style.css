@@ -57,6 +57,11 @@ body {
   .topbar__lang img {
     width: 32px;
     height: 22px;
+    opacity: 0.5;
+  }
+  .topbar__lang .current img,
+  .topbar__lang img:hover {
+    opacity: 1;
   }
 }
 

@@ -1,6 +1,6 @@
   <div class="topbar" aria-label="Selezione lingua">
     <div class="topbar__lang">
-        <a href="<?php echo BASE_PATH; ?>/en/" title="Switch to English version" tabindex="0" hreflang="en"><img src="<?php echo IMAGES_PATH; ?>/uk.svg" alt="English flag" title="English" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
+        <a class="current" href="<?php echo BASE_PATH; ?>/en/" title="Switch to English version" tabindex="0" hreflang="en"><img src="<?php echo IMAGES_PATH; ?>/uk.svg" alt="English flag" title="English" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
         <a href="<?php echo BASE_PATH; ?>/" title="Italian version" tabindex="0" hreflang="it"><img src="<?php echo IMAGES_PATH; ?>/it.svg" alt="Italian flag" title="Italian" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
         <a href="<?php echo BASE_PATH; ?>/es/" title="Cambiar a versión en español" tabindex="0" hreflang="es"><img src="<?php echo IMAGES_PATH; ?>/es.svg" alt="Bandera española" title="Español" tabindex="0" width="24" height="24" loading="lazy" decoding="async"></a>
     </div>
@@ -8,7 +8,7 @@
   
   <header class="header" role="banner">
     <div class="header__container">
-      <h1 class="header__title"><a href="<?php echo BASE_PATH; ?>"><img src="<?php echo IMAGES_PATH; ?>/IBS_logo.png" alt="Logo IBS Lab - Innovative Banking Solutions" class="header__logo" tabindex="0" width="200" height="80" fetchpriority="high" decoding="sync"></a></h1>
+      <h1 class="header__title"><a href="<?php echo BASE_PATH; ?>/en/"><img src="<?php echo IMAGES_PATH; ?>/IBS_logo.png" alt="Logo IBS Lab - Innovative Banking Solutions" class="header__logo" tabindex="0" width="200" height="80" fetchpriority="high" decoding="sync"></a></h1>
       
       <!-- Hamburger Button per Mobile -->
       <button class="header__hamburger" aria-label="Apri menu di navigazione" aria-expanded="false" tabindex="0">
@@ -39,7 +39,7 @@
             <a href="#contatti" tabindex="0">contacs</a>
             <ul class="nav__submenu">
                       <li><a href="<?php echo url('en/contacts'); ?>" tabindex="0">Contact us</a></li>
-        <li><a href="<?php echo url('en/lavora-con-noi'); ?>" tabindex="0">Work with us</a></li>
+                      <li><a href="<?php echo url('en/work-with-us'); ?>" tabindex="0">Work with us</a></li>
             </ul>
           </li>
         </ul>
