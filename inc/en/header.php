@@ -29,7 +29,7 @@
             <a href="<?php // echo url('en/mercati'); ?>" tabindex="0">mercati</a>
           </li> -->
           <li class="nav__item has-submenu">
-            <a href="#chi-siamo" tabindex="0">Who we are</a>
+            <a href="#chi-siamo" tabindex="0">About</a>
             <ul class="nav__submenu">
               <li><a href="<?php echo url('en/team'); ?>" tabindex="0">Us</a></li>
               <li><a href="<?php echo url('en/partners'); ?>" tabindex="0">Our Partners</a></li>
