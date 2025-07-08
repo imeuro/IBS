@@ -48,7 +48,7 @@
 
       <hr class="ibs__divider" />
 
-          <p><strong>IBSlab</strong> nasce per offrire agli istituti bancari e assicurativi servizi qualificati di <strong>Product Lifecycle Management</strong> (PLM) e <strong>Product Oversight Governance</strong> (POG), <strong>System Integration | migration</strong> (SI) e <strong>Application Management</strong> (AM)</p>
+          <p><strong>IBSlab</strong> was created to offer qualified services in <strong>Product Lifecycle Management</strong> (PLM) and <strong>Product Oversight Governance</strong> (POG), <strong>System Integration | migration</strong> (SI) and <strong>Application Management</strong> (AM) to banking and insurance institutions</p>
 
     </section>
 
