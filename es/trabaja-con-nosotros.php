@@ -52,6 +52,7 @@
         <p class="form-note"><span class="required">*</span> Los campos marcados con asterisco son obligatorios</p>
 
         <form id="job-application-form" class="contact-form" action="<?php echo url('process-job-application.php'); ?>" method="POST" enctype="multipart/form-data" novalidate>
+          <input type="hidden" name="lang" value="es">
           
           <!-- Campo de control automático -->
           <div class="form-field-extra">
@@ -121,7 +122,7 @@
               <div class="file-upload-wrapper">
                 <input type="file" id="cv" name="cv" class="file-input" accept=".pdf" required aria-required="true">
                 <label for="cv" class="file-upload-label">
-                  <span class="file-upload-text">Selecciona archivo PDF (máx 2MB)</span>
+                  <span class="file-upload-text">Selecciona archivo PDF (máx 5MB)</span>
                   <span class="file-upload-button">Examinar</span>
                 </label>
                 <div class="file-upload-info">
@@ -129,7 +130,7 @@
                   <span class="file-size"></span>
                 </div>
               </div>
-              <small class="form-help">Formatos aceptados: PDF. Tamaño máximo: 2MB</small>
+              <small class="form-help">Formatos aceptados: PDF. Tamaño máximo: 5MB</small>
             </div>
           </div>
 

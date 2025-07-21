@@ -8,12 +8,13 @@ if (DEVELOPMENT_MODE) {
 }
 
 // Configurazione email per candidature
-define('JOB_EMAIL_TO', 'hello@meuro.dev'); // Email destinatario per candidature
+define('JOB_EMAIL_TO', 'daniela.connizzoli@ibslab.eu'); // Email destinatario per candidature
+// define('JOB_EMAIL_TO', 'hello@meuro.dev'); // Email destinatario per candidature
 define('JOB_EMAIL_FROM', 'noreply@ibslab.eu'); // Email mittente
 define('JOB_EMAIL_SUBJECT', 'ibslab.eu - Nuova candidatura dal sito web');
 
 // Configurazione upload
-define('UPLOAD_MAX_SIZE', 2 * 1024 * 1024); // 2MB in bytes
+define('UPLOAD_MAX_SIZE', 5 * 1024 * 1024); // 5MB in bytes
 define('UPLOAD_ALLOWED_TYPES', ['application/pdf']);
 define('UPLOAD_DIR', __DIR__ . '/uploads/cv/');
 
@@ -65,7 +66,7 @@ function validateCVFile($file) {
                 break;
             case UPLOAD_ERR_INI_SIZE:
             case UPLOAD_ERR_FORM_SIZE:
-                $errors[] = 'Il file CV è troppo grande. Dimensione massima: 2MB.';
+                $errors[] = 'Il file CV è troppo grande. Dimensione massima: 5MB.';
                 break;
             default:
                 $errors[] = 'Errore durante il caricamento del CV.';
@@ -76,7 +77,7 @@ function validateCVFile($file) {
     
     // Verifica dimensione
     if ($file['size'] > UPLOAD_MAX_SIZE) {
-        $errors[] = 'Il file CV è troppo grande. Dimensione massima: 2MB.';
+        $errors[] = 'Il file CV è troppo grande. Dimensione massima: 5MB.';
     }
     
     // Verifica tipo MIME
@@ -105,6 +106,98 @@ function generateSafeFileName($originalName, $prefix = '') {
     return $prefix . $timestamp . '_' . $random . '.' . $extension;
 }
 
+// Riga 20: Inserimento struttura messaggi multilingua
+$messages = [
+    'success' => [
+        'it' => 'Candidatura inviata con successo! Grazie per il tuo interesse. Ti contatteremo al più presto.',
+        'en' => 'Application sent successfully! Thank you for your interest. We will contact you soon.',
+        'es' => '¡Solicitud enviada con éxito! Gracias por tu interés. Nos pondremos en contacto contigo pronto.'
+    ],
+    'required_fields' => [
+        'it' => 'Tutti i campi obbligatori devono essere compilati.',
+        'en' => 'All required fields must be filled in.',
+        'es' => 'Todos los campos obligatorios deben ser completados.'
+    ],
+    'email_required' => [
+        'it' => "L'indirizzo email è obbligatorio per la preferenza selezionata.",
+        'en' => 'Email address is required for the selected preference.',
+        'es' => 'La dirección de correo electrónico es obligatoria para la preferencia seleccionada.'
+    ],
+    'email_invalid' => [
+        'it' => 'Indirizzo email non valido.',
+        'en' => 'Invalid email address.',
+        'es' => 'Dirección de correo electrónico no válida.'
+    ],
+    'phone_required' => [
+        'it' => 'Il numero di telefono è obbligatorio per la preferenza selezionata.',
+        'en' => 'Phone number is required for the selected preference.',
+        'es' => 'El número de teléfono es obligatorio para la preferencia seleccionada.'
+    ],
+    'phone_invalid' => [
+        'it' => 'Numero di telefono non valido.',
+        'en' => 'Invalid phone number.',
+        'es' => 'Número de teléfono no válido.'
+    ],
+    'cv_missing' => [
+        'it' => 'Nessun file CV caricato.',
+        'en' => 'No CV file uploaded.',
+        'es' => 'No se ha subido ningún archivo de CV.'
+    ],
+    'cv_too_large' => [
+        'it' => 'Il file CV è troppo grande. Dimensione massima: 5MB.',
+        'en' => 'The CV file is too large. Maximum size: 5MB.',
+        'es' => 'El archivo de CV es demasiado grande. Tamaño máximo: 5MB.'
+    ],
+    'cv_invalid_format' => [
+        'it' => 'Formato file non valido. Sono accettati solo file PDF.',
+        'en' => 'Invalid file format. Only PDF files are accepted.',
+        'es' => 'Formato de archivo no válido. Solo se aceptan archivos PDF.'
+    ],
+    'cv_invalid_extension' => [
+        'it' => 'Estensione file non valida. Sono accettati solo file PDF.',
+        'en' => 'Invalid file extension. Only PDF files are accepted.',
+        'es' => 'Extensión de archivo no válida. Solo se aceptan archivos PDF.'
+    ],
+    'cv_upload_error' => [
+        'it' => 'Errore durante il caricamento del CV.',
+        'en' => 'Error uploading the CV.',
+        'es' => 'Error al subir el CV.'
+    ],
+    'upload_dir_error' => [
+        'it' => 'Impossibile creare directory per i file caricati',
+        'en' => 'Unable to create directory for uploaded files',
+        'es' => 'No se puede crear el directorio para los archivos subidos'
+    ],
+    'cv_save_error' => [
+        'it' => 'Errore durante il salvataggio del CV',
+        'en' => 'Error saving the CV',
+        'es' => 'Error al guardar el CV'
+    ],
+    'email_send_error' => [
+        'it' => "Errore nell'invio dell'email",
+        'en' => 'Error sending the email',
+        'es' => 'Error al enviar el correo electrónico'
+    ],
+    'invalid_request' => [
+        'it' => 'Richiesta non valida.',
+        'en' => 'Invalid request.',
+        'es' => 'Solicitud no válida.'
+    ],
+    'method_not_allowed' => [
+        'it' => 'Metodo non consentito',
+        'en' => 'Method not allowed',
+        'es' => 'Método no permitido'
+    ],
+    'generic_error' => [
+        'it' => "Si è verificato un errore durante l'invio. Riprova più tardi.",
+        'en' => 'An error occurred while sending. Please try again later.',
+        'es' => 'Se produjo un error durante el envío. Por favor, inténtalo de nuevo más tarde.'
+    ]
+];
+
+// Riga 70: Recupero lingua dal POST
+$lang = isset($_POST['lang']) && in_array($_POST['lang'], ['it', 'en', 'es']) ? $_POST['lang'] : 'it';
+
 try {
     // Debug: Log dati ricevuti
     if (DEVELOPMENT_MODE) {
@@ -117,7 +210,7 @@ try {
     if (!empty($securityField)) {
         // Richiesta automatica rilevata - registra e blocca
         error_log("Job application automated request blocked: " . $_SERVER['REMOTE_ADDR'] . " - " . date('Y-m-d H:i:s'));
-        echo json_encode(['success' => false, 'message' => 'Richiesta non valida.']);
+        echo json_encode(['success' => false, 'message' => $messages['invalid_request'][$lang]]);
         exit;
     }
 
@@ -134,29 +227,29 @@ try {
 
     // Validazione campi sempre obbligatori
     if (empty($nome) || empty($cognome) || empty($messaggio) || !$privacy) {
-        echo json_encode(['success' => false, 'message' => 'Tutti i campi obbligatori devono essere compilati.']);
+        echo json_encode(['success' => false, 'message' => $messages['required_fields'][$lang]]);
         exit;
     }
 
     // Validazione campi in base alla preferenza di contatto
     if ($preferenzaContatto === 'email' || $preferenzaContatto === 'entrambi') {
         if (empty($email)) {
-            echo json_encode(['success' => false, 'message' => 'L\'indirizzo email è obbligatorio per la preferenza selezionata.']);
+            echo json_encode(['success' => false, 'message' => $messages['email_required'][$lang]]);
             exit;
         }
         if (!validateEmail($email)) {
-            echo json_encode(['success' => false, 'message' => 'Indirizzo email non valido.']);
+            echo json_encode(['success' => false, 'message' => $messages['email_invalid'][$lang]]);
             exit;
         }
     }
 
     if ($preferenzaContatto === 'telefono' || $preferenzaContatto === 'entrambi') {
         if (empty($telefono)) {
-            echo json_encode(['success' => false, 'message' => 'Il numero di telefono è obbligatorio per la preferenza selezionata.']);
+            echo json_encode(['success' => false, 'message' => $messages['phone_required'][$lang]]);
             exit;
         }
         if (!validatePhone($telefono)) {
-            echo json_encode(['success' => false, 'message' => 'Numero di telefono non valido.']);
+            echo json_encode(['success' => false, 'message' => $messages['phone_invalid'][$lang]]);
             exit;
         }
     }
@@ -164,14 +257,31 @@ try {
     // Validazione file CV
     $cvErrors = validateCVFile($_FILES['cv'] ?? null);
     if (!empty($cvErrors)) {
-        echo json_encode(['success' => false, 'message' => implode(' ', $cvErrors)]);
+        // Mappo i messaggi di errore CV su quelli multilingua
+        $cvErrorMsg = '';
+        foreach ($cvErrors as $err) {
+            if (strpos($err, 'Nessun file CV caricato') !== false) {
+                $cvErrorMsg .= $messages['cv_missing'][$lang] . ' ';
+            } elseif (strpos($err, 'troppo grande') !== false) {
+                $cvErrorMsg .= $messages['cv_too_large'][$lang] . ' ';
+            } elseif (strpos($err, 'Formato file non valido') !== false) {
+                $cvErrorMsg .= $messages['cv_invalid_format'][$lang] . ' ';
+            } elseif (strpos($err, 'Estensione file non valida') !== false) {
+                $cvErrorMsg .= $messages['cv_invalid_extension'][$lang] . ' ';
+            } elseif (strpos($err, 'Errore durante il caricamento del CV') !== false) {
+                $cvErrorMsg .= $messages['cv_upload_error'][$lang] . ' ';
+            } else {
+                $cvErrorMsg .= $err . ' ';
+            }
+        }
+        echo json_encode(['success' => false, 'message' => trim($cvErrorMsg)]);
         exit;
     }
 
     // Crea directory upload se non esiste
     if (!is_dir(UPLOAD_DIR)) {
         if (!mkdir(UPLOAD_DIR, 0755, true)) {
-            throw new Exception('Impossibile creare directory per i file caricati');
+            throw new Exception($messages['upload_dir_error'][$lang]);
         }
     }
 
@@ -181,7 +291,7 @@ try {
     $uploadPath = UPLOAD_DIR . $safeFileName;
 
     if (!move_uploaded_file($_FILES['cv']['tmp_name'], $uploadPath)) {
-        throw new Exception('Errore durante il salvataggio del CV');
+        throw new Exception($messages['cv_save_error'][$lang]);
     }
 
     // Prepara il contenuto dell'email
@@ -260,14 +370,14 @@ try {
         
         echo json_encode([
             'success' => true, 
-            'message' => 'Candidatura inviata con successo! Grazie per il tuo interesse. Ti contatteremo al più presto.'
+            'message' => $messages['success'][$lang]
         ]);
     } else {
         // Rimuovi file se invio fallito
         if (file_exists($uploadPath)) {
             unlink($uploadPath);
         }
-        throw new Exception('Errore nell\'invio dell\'email');
+        throw new Exception($messages['email_send_error'][$lang]);
     }
 
 } catch (Exception $e) {
@@ -281,7 +391,7 @@ try {
     
     echo json_encode([
         'success' => false, 
-        'message' => 'Si è verificato un errore durante l\'invio. Riprova più tardi.'
+        'message' => $messages['generic_error'][$lang]
     ]);
 }
 ?> 

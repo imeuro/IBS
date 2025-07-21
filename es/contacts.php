@@ -52,6 +52,7 @@
         <p class="form-note"><span class="required">*</span> Los campos marcados con asterisco son obligatorios</p>
 
         <form id="contact-form" class="contact-form" action="<?php echo url('process-contact.php'); ?>" method="POST" novalidate>
+          <input type="hidden" name="lang" value="es">
           
           <!-- Campo de control automático -->
           <div class="form-field-extra">
