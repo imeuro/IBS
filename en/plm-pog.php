@@ -43,8 +43,8 @@
   <main>
     <section id="we" class="section section--light" aria-labelledby="we-heading">
       <h2 id="we-heading" class="section__title">WE</h2>
-      <p>IBSlab was created to offer banking and insurance institutions qualified Product Lifecycle Management (PLM) services,  System Integration | migration (SI) and Application Management (AM).<br>
-      We are a team of experienced financial services technologists with a proven track record in scaling resources   and successfully completing projects in the most complex scenarios. We have in-depth knowledge  of banking and financial intermediation processes and an extensive Europe-wide network.</p>
+      <p>IBSlab was created to offer banking and insurance institutions qualified Product Lifecycle Management (PLM) services, System Integration | migration (SI) and Application Management (AM).<br>
+      We are a team of experienced financial services technologists with a proven track record in scaling resources  and successfully completing projects in the most complex scenarios. We have in-depth knowledge of banking and financial intermediation processes and an extensive Europe-wide network.</p>
     </section>
 
     <!-- Soluzioni -->
@@ -57,7 +57,7 @@
         <div class="section__partner">
             <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Visita il sito di Kore Labs"><img src="<?php echo IMAGES_PATH; ?>/kore_logo.svg" alt="Logo Kore Labs - Partner tecnologico" class="section__partner-logo" width="150" height="60" loading="lazy" decoding="async"></a>
             
-            <p>As a reference partner of <strong><a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORElabs</a></strong> and expert in the <strong><a href="https://korelabs.co/kore-prm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> platform for Product Lifecycle Management</strong>, we offer you configuration and migration activities, with a focus on optimising time-to-market and economic investment</p>
+            <p>As a reference partner of <strong><a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORElabs</a></strong> and expert in the <strong><a href="https://korelabs.co/kore-prm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> platform for Product Lifecycle Management</strong>, we offer configuration and migration activities, with a focus on optimising time-to-market and economic investment</p>
         </div>
     </section>
 
@@ -69,8 +69,8 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M122.2 0C91.7 0 65.5 21.5 59.5 51.4L8.3 307.4C.4 347 30.6 384 71 384l217 0 0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64 217 0c40.4 0 70.7-36.9 62.8-76.6l-51.2-256C574.5 21.5 548.3 0 517.8 0L122.2 0zM260.9 64l118.2 0 10.4 104-139 0L260.9 64zM202.3 168l-100.8 0L122.2 64l90.4 0L202.3 168zM91.8 216l105.6 0L187.1 320 71 320 91.8 216zm153.9 0l148.6 0 10.4 104-169.4 0 10.4-104zm196.8 0l105.6 0L569 320l-116 0L442.5 216zm96-48l-100.8 0L427.3 64l90.4 0 31.4-6.3L517.8 64l20.8 104z"/></svg>
                 </span>
                 <div class="vp-text">
-                  <strong>Everything in one repository</strong>
-                  <span class="vp-desc">A single view of data, decisions, events and documents related products</span>
+                  <strong>Everything in one place</strong>
+                  <span class="vp-desc">A single view of product data, documents and decisions</span>
                 </div>
               </div>
 
@@ -79,7 +79,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm320 96c0-26.9-16.5-49.9-40-59.3L280 88c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 204.7c-23.5 9.5-40 32.5-40 59.3c0 35.3 28.7 64 64 64s64-28.7 64-64zM144 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm-16 80a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM400 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
                 </span>
                 <div class="vp-text">
-                  <strong>Complete control</strong>
+                  <strong>End-to-end controls</strong>
                   <span class="vp-desc">Controlled digital environment and automatic audit trail</span>
                 </div>
               </div>
@@ -90,7 +90,7 @@
                 </span>
                 <div class="vp-text">
                   <strong>Increased productivity</strong>
-                  <span class="vp-desc">Collaboration between companies, business functions, teams and geographical areas</span>
+                  <span class="vp-desc">Collaboration between teams, business units, and corporate divisions</span>
                 </div>
               </div>
 

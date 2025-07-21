@@ -44,11 +44,11 @@
     <!-- Soluzioni -->
     <section id="team" class="section section--light" aria-labelledby="team-heading">
 
-      <h1 id="team-heading" class="section__title">NOI</h1>
+      <h1 id="team-heading" class="section__title">US</h1>
 
       <hr class="ibs__divider" />
 
-          <p><strong>IBSlab</strong> was created to offer qualified services in <strong>Product Lifecycle Management</strong> (PLM) and <strong>Product Oversight Governance</strong> (POG), <strong>System Integration | migration</strong> (SI) and <strong>Application Management</strong> (AM) to banking and insurance institutions</p>
+          <p><strong>IBSlab</strong> was established to support banks, investment managers, and insurers with expert services in <strong>Product Lifecycle Management</strong> (PLM), <strong>System Integration & migration</strong> (SI) and <strong>Application Management</strong> (AM), enabling seamless transformation across the enterprise.</p>
 
     </section>
 

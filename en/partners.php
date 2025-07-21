@@ -50,9 +50,10 @@
         <div class="section__partner">
           <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Visita il sito di Kore Labs"><img src="<?php echo IMAGES_PATH; ?>/kore_logo.svg" alt="Logo Kore Labs - Partner tecnologico" class="section__partner-logo" width="150" height="60" loading="lazy" decoding="async"></a>
           <div class="section__partner-content">
-            <p>We are the company chosen by <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORElabs</a>, an English company leader in the offer of financial and insurance Product Management-as-a-Service services, to support exclusively the activities of configuration, migration and integration on their platform.</p>
-            <p><a href="https://korelabs.co/kore-prm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> is the first Product Intelligence platform for the financial products and services sector characterised by an end-to-end approach and the digital and integrated management of data fragmentation.<br>
-            KorePRM® offers <a href="https://korelabs.co/use-cases/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">use cases</a> that allow multiple stakeholders and teams to collaborate efficiently and without solution continuity to manage products and maintain audit traceability for regulatory purposes.</p>
+
+            <p>We are an exclusive partner of  <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORElabs</a>, a London-based Fintech offering the first dedicated Product Management-as-a-Service platform for the financial services industry. We support Kore Labs across all activities related to configuration, migration, and integration.</p>
+            <p>Kore Labs offers a digital, turn-key solution for product governance and product intelligence, designed specifically for banks, insurance companies, and investment managers. Its cloud-based, modular platform — <a href="https://korelabs.co/kore-prm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> — enables organisations to centralise product data, digitise end-to-end processes, strengthen governance, and maintain a comprehensive audit trail to meet regulatory requirements. By enhancing collaboration and transparency, KorePRM® supports better decision-making by unlocking actionable insights that were previously inaccessible.</p>
+
           </div>
         </div>
         
@@ -60,45 +61,69 @@
     <section id="plm-pog-content" class="section section--light" aria-labelledby="plm-pog-list-content">
 
             <div class="vp-col vp-col--stacked">
-              <div class="vp-cell">
-                <span class="vp-icon" aria-label="Dashboard" tabindex="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M122.2 0C91.7 0 65.5 21.5 59.5 51.4L8.3 307.4C.4 347 30.6 384 71 384l217 0 0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64 217 0c40.4 0 70.7-36.9 62.8-76.6l-51.2-256C574.5 21.5 548.3 0 517.8 0L122.2 0zM260.9 64l118.2 0 10.4 104-139 0L260.9 64zM202.3 168l-100.8 0L122.2 64l90.4 0L202.3 168zM91.8 216l105.6 0L187.1 320 71 320 91.8 216zm153.9 0l148.6 0 10.4 104-169.4 0 10.4-104zm196.8 0l105.6 0L569 320l-116 0L442.5 216zm96-48l-100.8 0L427.3 64l90.4 0 31.4-6.3L517.8 64l20.8 104z"></path></svg>
-                </span>
+              <div class="vp-cell vp-cell-partners">
                 <div class="vp-text">
-                  <strong>Everything in one repository</strong>
-                  <span class="vp-desc">A single view of data, decisions, events and documents related products</span>
+                  <strong>We centralise the data created during the life cycle of financial products and services.</strong>
+                  <span class="vp-desc"><br>We are to the Product what CRM is to the Customer.</span>
+
+                  <ul class="vp-desc vp-award-list">
+                    <li class="vp-award-list-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/Innovate_UK_grant_winner-women_2025.png" alt="Innovate UK Grant Winner 2025" />
+                    </li>
+                    <li class="vp-award-list-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/Innovate_UK_grant_winner_2024.png" alt="Innovate UK Grant Winner 2024" />
+                    </li>
+                    <li class="vp-award-list-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/Innovate_UK_grant_winner_2023.png" alt="Innovate UK Grant Winner 2023" />
+                    </li>
+                    <li class="vp-award-list-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/Innovate_UK_grant_winner_2021.png" alt="Innovate UK Grant Winner 2021" />
+                    </li>
+                    <li class="vp-award-list-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/Innovate_UK_grant_winner_2019.png" alt="Innovate UK Grant Winner 2019" />
+                    </li>
+                  </ul>
+
+                  <ul class="vp-desc vp-award-logos">
+                    <li class="vp-award-logos-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/rise-barclays.png" alt="RISE by Barclays" />
+                    </li>
+                    <li class="vp-award-logos-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/money20-20w.png" alt="Money 20/20" />
+                    </li>
+                    <li class="vp-award-logos-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/sifted.png" alt="Sifted" />
+                    </li>
+                    <li class="vp-award-logos-item">
+                      <img src="<?php echo IMAGES_PATH; ?>/awards/PwC-raise.png" alt="PwC Raise | ventures" />
+                    </li>
+                  </ul>
+
                 </div>
+              </div>
+              
+              <div class="vp-cell vp-cell-partners vp-cell-partners-right">
+                <div class="vp-cell-partners-right-item">
+                  <h4>Kore Catalogue</h4>
+                  <span>360 degree view</span>
+                </div>
+                <div class="vp-cell-partners-right-item">
+                  <h4>Kore Insight</h4>
+                  <span>Business Intelligence</span>
+                </div>
+                <div class="vp-cell-partners-right-item">
+                  <h4>Kore Lifecycle</h4>
+                  <span>End-to-end digitalised process</span>
+                </div>
+                <div class="vp-cell-partners-right-item">
+                  <h4>Kore Audit</h4>
+                  <span>Controls and cooperation</span>
+                </div>
+
+                <img class="vp-cell-kore-logo" src="<?php echo IMAGES_PATH; ?>/kore_logo.svg" alt="Kore" width="150" height="60" loading="lazy" decoding="async" />
+                <img class="vp-cell-ISO-stamp" src="<?php echo IMAGES_PATH; ?>/ISO27001-stamp.png" alt="ISO 27001 certified" width="125" height="120" loading="lazy" decoding="async" />
               </div>
 
-              <div class="vp-cell">
-                <span class="vp-icon" aria-label="Gauge" tabindex="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm320 96c0-26.9-16.5-49.9-40-59.3L280 88c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 204.7c-23.5 9.5-40 32.5-40 59.3c0 35.3 28.7 64 64 64s64-28.7 64-64zM144 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm-16 80a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM400 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
-                </span>
-                <div class="vp-text">
-                  <strong>Complete control</strong>
-                  <span class="vp-desc">Controlled digital environment and automatic audit trail</span>
-                </div>
-              </div>
-
-              <div class="vp-cell">
-                <span class="vp-icon" aria-label="Chart" tabindex="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"></path></svg>
-                </span>
-                <div class="vp-text">
-                  <strong>Increased productivity</strong>
-                  <span class="vp-desc">Collaboration between companies, business functions, teams and geographical areas</span>
-                </div>
-              </div>
-
-              <div class="vp-cell">
-                <span class="vp-icon" aria-label="Gears" tabindex="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"></path></svg>
-                </span>
-                <div class="vp-text">
-                  <strong>Modular and configurable</strong>
-                  <span class="vp-desc">To adapt to your products, processes and business structure</span>
-                </div>
-              </div>
             </div>
       
     </section>

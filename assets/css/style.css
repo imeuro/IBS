@@ -929,6 +929,18 @@ body {
   opacity: 0;
   transition: opacity 1s;
 }
+.vp-col.vp-col--stacked .vp-cell.vp-cell-partners {
+  padding: 2rem 2rem 1rem 2rem;
+}
+.vp-col.vp-col--stacked .vp-cell.vp-cell-partners-right {
+  gap: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
 .vp-col.vp-col--stacked .vp-cell.fade-in {
   opacity: 1;
@@ -1002,6 +1014,68 @@ body {
   box-shadow: 0 2px 8px rgba(10, 22, 51, 0.07);
 }
 
+.vp-award-list,
+.vp-award-logos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 50px 0;
+  gap: 10px;
+}
+.vp-award-list-item,
+.vp-award-logos-item {
+  flex: 0 0 100px;
+  background-color: rgba(var(--bianco), 1);
+  border-radius: 15px;
+  padding: 10px;
+}
+.vp-award-logos-item {
+  background-color: transparent;
+  border-radius: 0;
+}
+.vp-award-list-item img,
+.vp-award-logos-item img {
+  max-width: 100%;
+  height: auto;
+}
+.vp-cell-partners-right-item {
+  background: rgba(var(--bianco), .05);
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 200px;
+  flex: 1 0 calc(50% - 50px);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.vp-cell-partners-right-item h4 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: rgba(var(--giallo), 1);
+  text-transform: uppercase;
+}
+img.vp-cell-ISO-stamp {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+img.vp-cell-kore-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: rgb(var(--light-blu));
+}
+
+
 /* Responsive: mobile-first, layout verticale */
 @media (min-width: 768px) {
   .value-proposition-graphic {
@@ -1068,6 +1142,18 @@ body {
     flex: 1 0 33%;
     display: none;
   }
+    #plm-pog-content .vp-col {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+    }
+  
+    #plm-pog-content .vp-col>.vp-cell {
+      flex: 1 1 0;
+      height: auto;
+      min-height: 0;
+      align-self: stretch;
+    }
 }
 
 @media (min-width: 1000px) {
