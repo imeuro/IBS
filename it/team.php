@@ -48,7 +48,7 @@
 
       <hr class="ibs__divider" />
 
-          <p><strong>IBSlab</strong> è stata fondata per supportare banche, gestori di investimenti e assicurazioni con servizi esperti di <strong>Product Lifecycle Management</strong> (PLM), <strong>System Integration | migration</strong> (SI) e <strong>Application Management</strong> (AM), consentendo una trasformazione continua in tutta l'azienda.</p>
+          <p><strong>IBSlab</strong> è stata fondata per supportare banche, gestori di investimenti e assicurazioni con servizi esperti di <strong>Product Lifecycle Management</strong> (PLM), <strong>System Integration & migration</strong> (SI) e <strong>Application Management</strong> (AM), consentendo una trasformazione continua in tutta l'azienda.</p>
 
     </section>
 
