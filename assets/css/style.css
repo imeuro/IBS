@@ -567,7 +567,7 @@ body {
 }
 
 .page[data-page="cookie-policy"] .section h3,
-.page[data-page="privacy-policy"] .section h3    {
+.page[data-page="privacy-policy"] .section h3 {
   color: rgb(var(--giallo));
   margin-top: 1.5rem;
 }
@@ -929,12 +929,14 @@ body {
   opacity: 0;
   transition: opacity 1s;
 }
+
 .vp-col.vp-col--stacked .vp-cell.vp-cell-partners {
   padding: 2rem 2rem 1rem 2rem;
 }
+
 .vp-col.vp-col--stacked .vp-cell.vp-cell-partners-right {
   gap: 10px;
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -1025,6 +1027,7 @@ body {
   margin: 50px 0;
   gap: 10px;
 }
+
 .vp-award-list-item,
 .vp-award-logos-item {
   flex: 0 0 100px;
@@ -1032,27 +1035,31 @@ body {
   border-radius: 15px;
   padding: 10px;
 }
+
 .vp-award-logos-item {
   background-color: transparent;
   border-radius: 0;
 }
+
 .vp-award-list-item img,
 .vp-award-logos-item img {
   max-width: 100%;
   height: auto;
 }
+
 .vp-cell-partners-right-item {
   background: rgba(var(--bianco), .05);
   border-radius: 12px;
   padding: 1rem;
   min-height: 200px;
-  flex: 1 0 calc(50% - 50px);
+  flex: 0 0 calc(50% - 2.5rem);
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 .vp-cell-partners-right-item h4 {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -1060,11 +1067,13 @@ body {
   color: rgba(var(--giallo), 1);
   text-transform: uppercase;
 }
+
 img.vp-cell-ISO-stamp {
   position: absolute;
   top: -15px;
   left: -15px;
 }
+
 img.vp-cell-kore-logo {
   position: absolute;
   top: 50%;
@@ -1142,18 +1151,19 @@ img.vp-cell-kore-logo {
     flex: 1 0 33%;
     display: none;
   }
-    #plm-pog-content .vp-col {
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-    }
-  
-    #plm-pog-content .vp-col>.vp-cell {
-      flex: 1 1 0;
-      height: auto;
-      min-height: 0;
-      align-self: stretch;
-    }
+
+  #plm-pog-content .vp-col {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  #plm-pog-content .vp-col>.vp-cell {
+    flex: 1 1 0;
+    height: auto;
+    min-height: 0;
+    align-self: stretch;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -1609,7 +1619,7 @@ section .people-name * {
   background: rgba(var(--giallo), 0.1);
 }
 
-.file-input.error + .file-upload-label {
+.file-input.error+.file-upload-label {
   border-color: #e74c3c;
   background: rgba(231, 76, 60, 0.1);
 }
@@ -1671,7 +1681,7 @@ section .people-name * {
   .file-upload-label {
     padding: 1rem 1.25rem;
   }
-  
+
   .file-upload-info {
     font-size: 0.9rem;
   }
