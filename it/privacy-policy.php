@@ -114,6 +114,6 @@
   <?php include INCLUDES_PATH . '/it/footer.php'; ?>
 
   <!-- Scripts - Optimized for LCP -->
-  <script src="<?php echo JS_PATH; ?>/script.js" type="module" defer></script>
+  <script src="<?php echo assetWithVersionSafe('js/script.js'); ?>" type="module" defer></script>
 </body>
 </html> 

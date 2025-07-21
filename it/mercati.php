@@ -56,7 +56,7 @@
   <?php include INCLUDES_PATH . '/it/footer.php'; ?>
 
   <!-- Scripts - Optimized for LCP -->
-  <script src="<?php echo JS_PATH; ?>/script.js" type="module" defer></script>
+  <script src="<?php echo assetWithVersionSafe('js/script.js'); ?>" type="module" defer></script>
   
   <!-- Google Analytics - Non-blocking -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CC61R12ZY"></script>

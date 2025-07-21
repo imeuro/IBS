@@ -92,8 +92,8 @@ function assetWithVersion($relativePath) {
     // Normalizza il percorso relativo
     $relativePath = ltrim($relativePath, '/');
     
-    // Costruisci il percorso completo del file
-    $fullPath = ROOT_PATH . '/' . $relativePath;
+    // Costruisci il percorso completo del file (corretto: punta sempre a /assets/)
+    $fullPath = ROOT_PATH . '/assets/' . $relativePath;
     
     // Debug in modalità sviluppo
     if (DEVELOPMENT_MODE) {
