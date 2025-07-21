@@ -1081,7 +1081,7 @@ img.vp-cell-kore-logo {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background-color: rgb(var(--light-blu));
+  background-color: rgba(var(--dark-blu), 0.5);
 }
 
 
@@ -1152,13 +1152,13 @@ img.vp-cell-kore-logo {
     display: none;
   }
 
-  #plm-pog-content .vp-col {
+  #partners-content .vp-col {
     display: flex;
     flex-direction: row;
     align-items: stretch;
   }
 
-  #plm-pog-content .vp-col>.vp-cell {
+  #partners-content .vp-col>.vp-cell {
     flex: 1 1 0;
     height: auto;
     min-height: 0;

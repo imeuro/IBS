@@ -1,5 +1,5 @@
 // Effetto fade-in sequenziale per le .vp-cell in #plm-pog-content
-const plmPogContent = document.querySelector('#plm-pog-content');
+const plmPogContent = document.querySelector('#plm-pog-content, #partners-content');
 if (plmPogContent) {
   const cells = Array.from(plmPogContent.querySelectorAll('.vp-cell'));
   let hasAnimated = false;

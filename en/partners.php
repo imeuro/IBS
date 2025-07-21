@@ -58,7 +58,7 @@
         </div>
         
     </section>
-    <section id="plm-pog-content" class="section section--light" aria-labelledby="plm-pog-list-content">
+    <section id="partners-content" class="section section--light" aria-labelledby="partners-list-content">
 
             <div class="vp-col vp-col--stacked">
               <div class="vp-cell vp-cell-partners">
