@@ -1,3 +1,63 @@
+// Riga 1: Struttura messaggi multilingua
+const messages = {
+  'it': {
+    'required_fields': 'Compila tutti i campi obbligatori e carica un CV valido.',
+    'email_invalid': 'Inserisci un indirizzo email valido.',
+    'phone_invalid': 'Inserisci un numero di telefono valido.',
+    'cv_select': 'Seleziona un file CV.',
+    'cv_pdf_format': 'Il CV deve essere in formato PDF.',
+    'cv_too_large': 'Il file CV è troppo grande. Dimensione massima: 2MB.',
+    'connection_error': 'Errore di connessione. Verifica la tua connessione e riprova.',
+    'generic_error': 'Si è verificato un errore. Riprova più tardi.',
+    'form_not_found': 'Form candidatura lavoro non trovato nella pagina'
+  },
+  'en': {
+    'required_fields': 'Fill in all required fields and upload a valid CV.',
+    'email_invalid': 'Please enter a valid email address.',
+    'phone_invalid': 'Please enter a valid phone number.',
+    'cv_select': 'Please select a CV file.',
+    'cv_pdf_format': 'The CV must be in PDF format.',
+    'cv_too_large': 'The CV file is too large. Maximum size: 2MB.',
+    'connection_error': 'Connection error. Check your connection and try again.',
+    'generic_error': 'An error occurred. Please try again later.',
+    'form_not_found': 'Job application form not found on the page'
+  },
+  'es': {
+    'required_fields': 'Completa todos los campos obligatorios y sube un CV válido.',
+    'email_invalid': 'Por favor, introduce una dirección de correo electrónico válida.',
+    'phone_invalid': 'Por favor, introduce un número de teléfono válido.',
+    'cv_select': 'Por favor, selecciona un archivo de CV.',
+    'cv_pdf_format': 'El CV debe estar en formato PDF.',
+    'cv_too_large': 'El archivo de CV es demasiado grande. Tamaño máximo: 2MB.',
+    'connection_error': 'Error de conexión. Verifica tu conexión e inténtalo de nuevo.',
+    'generic_error': 'Se produjo un error. Por favor, inténtalo de nuevo más tarde.',
+    'form_not_found': 'Formulario de candidatura de trabajo no encontrado en la página'
+  }
+};
+
+// Riga 50: Funzione per determinare la lingua corrente
+const getCurrentLanguage = () => {
+  // Prova a prendere la lingua dal campo hidden lang
+  const langField = document.querySelector('input[name="lang"]');
+  if (langField && langField.value && messages[langField.value]) {
+    return langField.value;
+  }
+  
+  // Fallback: determina dalla URL
+  const path = window.location.pathname;
+  if (path.startsWith('/en/')) return 'en';
+  if (path.startsWith('/es/')) return 'es';
+  
+  // Default: italiano
+  return 'it';
+};
+
+// Riga 70: Funzione per ottenere messaggio nella lingua corrente
+const getMessage = (key) => {
+  const lang = getCurrentLanguage();
+  return messages[lang]?.[key] || messages['it'][key] || key;
+};
+
 // Validazione e gestione form candidature lavorative
 const jobApplicationForm = document.getElementById('job-application-form');
 if (jobApplicationForm) {
@@ -28,19 +88,19 @@ if (jobApplicationForm) {
     const maxSize = 2 * 1024 * 1024; // 2MB
     
     if (!file) {
-      errors.push('Seleziona un file CV.');
+      errors.push(getMessage('cv_select'));
       return errors;
     }
     
     // Verifica estensione
     const fileName = file.name.toLowerCase();
     if (!fileName.endsWith('.pdf')) {
-      errors.push('Il CV deve essere in formato PDF.');
+      errors.push(getMessage('cv_pdf_format'));
     }
     
     // Verifica dimensione
     if (file.size > maxSize) {
-      errors.push('Il file CV è troppo grande. Dimensione massima: 2MB.');
+      errors.push(getMessage('cv_too_large'));
     }
     
     return errors;
@@ -224,21 +284,21 @@ if (jobApplicationForm) {
     }
 
     if (hasErrors) {
-      showMessage('Compila tutti i campi obbligatori e carica un CV valido.', 'error');
+      showMessage(getMessage('required_fields'), 'error');
       return;
     }
 
     // Validazione formato email (se fornita)
     if (email && !validateEmail(email)) {
       document.getElementById('email').classList.add('error');
-      showMessage('Inserisci un indirizzo email valido.', 'error');
+      showMessage(getMessage('email_invalid'), 'error');
       return;
     }
 
     // Validazione formato telefono (se fornito)
     if (telefono && !validatePhone(telefono)) {
       document.getElementById('telefono').classList.add('error');
-      showMessage('Inserisci un numero di telefono valido.', 'error');
+      showMessage(getMessage('phone_invalid'), 'error');
       return;
     }
 
@@ -256,7 +316,7 @@ if (jobApplicationForm) {
       const result = await response.json();
 
       if (result.success) {
-        showMessage('Candidatura inviata con successo! Grazie per il tuo interesse. Ti contatteremo al più presto.', 'success');
+        showMessage(result.message, 'success');
         jobApplicationForm.reset();
         // Reset file upload display
         fileNameSpan.textContent = '';
@@ -264,10 +324,10 @@ if (jobApplicationForm) {
         fileUploadLabel.classList.remove('file-selected');
         updateFieldRequirements(); // Ripristina i requisiti dopo il reset
       } else {
-        showMessage(result.message || 'Si è verificato un errore. Riprova più tardi.', 'error');
+        showMessage(result.message || getMessage('generic_error'), 'error');
       }
     } catch (error) {
-      showMessage('Errore di connessione. Verifica la tua connessione e riprova.', 'error');
+      showMessage(getMessage('connection_error'), 'error');
     } finally {
       // Riabilita submit
       submitButton.disabled = false;

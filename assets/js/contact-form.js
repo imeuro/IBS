@@ -1,8 +1,59 @@
+// Riga 1: Struttura messaggi multilingua
+const messages = {
+  'it': {
+    'required_fields': 'Compila tutti i campi obbligatori.',
+    'email_invalid': 'Inserisci un indirizzo email valido.',
+    'phone_invalid': 'Inserisci un numero di telefono valido.',
+    'connection_error': 'Errore di connessione. Verifica la tua connessione e riprova.',
+    'generic_error': 'Si è verificato un errore. Riprova più tardi.',
+    'form_not_found': 'Form di contatto non trovato nella pagina'
+  },
+  'en': {
+    'required_fields': 'Fill in all required fields.',
+    'email_invalid': 'Please enter a valid email address.',
+    'phone_invalid': 'Please enter a valid phone number.',
+    'connection_error': 'Connection error. Check your connection and try again.',
+    'generic_error': 'An error occurred. Please try again later.',
+    'form_not_found': 'Contact form not found on the page'
+  },
+  'es': {
+    'required_fields': 'Completa todos los campos obligatorios.',
+    'email_invalid': 'Por favor, introduce una dirección de correo electrónico válida.',
+    'phone_invalid': 'Por favor, introduce un número de teléfono válido.',
+    'connection_error': 'Error de conexión. Verifica tu conexión e inténtalo de nuevo.',
+    'generic_error': 'Se produjo un error. Por favor, inténtalo de nuevo más tarde.',
+    'form_not_found': 'Formulario de contacto no encontrado en la página'
+  }
+};
+
+// Riga 50: Funzione per determinare la lingua corrente
+const getCurrentLanguage = () => {
+  // Prova a prendere la lingua dal campo hidden lang
+  const langField = document.querySelector('input[name="lang"]');
+  if (langField && langField.value && messages[langField.value]) {
+    return langField.value;
+  }
+  
+  // Fallback: determina dalla URL
+  const path = window.location.pathname;
+  if (path.startsWith('/en/')) return 'en';
+  if (path.startsWith('/es/')) return 'es';
+  
+  // Default: italiano
+  return 'it';
+};
+
+// Riga 70: Funzione per ottenere messaggio nella lingua corrente
+const getMessage = (key) => {
+  const lang = getCurrentLanguage();
+  return messages[lang]?.[key] || messages['it'][key] || key;
+};
+
 // Validazione e gestione form di contatto
 const initContactForm = () => {
   const contactForm = document.getElementById('contact-form');
   if (!contactForm) {
-    console.warn('Form di contatto non trovato nella pagina');
+    console.warn(getMessage('form_not_found'));
     return;
   }
 
@@ -158,21 +209,21 @@ const initContactForm = () => {
     }
 
     if (hasErrors) {
-      showMessage('Compila tutti i campi obbligatori.', 'error');
+      showMessage(getMessage('required_fields'), 'error');
       return;
     }
 
     // Validazione formato email (se fornita)
     if (email && !validateEmail(email)) {
       document.getElementById('email').classList.add('error');
-      showMessage('Inserisci un indirizzo email valido.', 'error');
+      showMessage(getMessage('email_invalid'), 'error');
       return;
     }
 
     // Validazione formato telefono (se fornito)
     if (telefono && !validatePhone(telefono)) {
       document.getElementById('telefono').classList.add('error');
-      showMessage('Inserisci un numero di telefono valido.', 'error');
+      showMessage(getMessage('phone_invalid'), 'error');
       return;
     }
 
@@ -190,14 +241,14 @@ const initContactForm = () => {
       const result = await response.json();
 
       if (result.success) {
-        showMessage('Messaggio inviato con successo! Ti risponderemo al più presto.', 'success');
+        showMessage(result.message, 'success');
         contactForm.reset();
         updateFieldRequirements(); // Ripristina i requisiti dopo il reset
       } else {
-        showMessage(result.message || 'Si è verificato un errore. Riprova più tardi.', 'error');
+        showMessage(result.message || getMessage('generic_error'), 'error');
       }
     } catch (error) {
-      showMessage('Errore di connessione. Verifica la tua connessione e riprova.', 'error');
+      showMessage(getMessage('connection_error'), 'error');
     } finally {
       // Riabilita submit
       submitButton.disabled = false;
