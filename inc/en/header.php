@@ -8,7 +8,7 @@
   
   <header class="header" role="banner">
     <div class="header__container">
-      <h1 class="header__title"><a href="<?php echo BASE_PATH; ?>/en/"><img src="<?php echo IMAGES_PATH; ?>/IBS_logo.png" alt="Logo IBS Lab - Innovative Banking Solutions" class="header__logo" tabindex="0" width="200" height="80" fetchpriority="high" decoding="sync"></a></h1>
+      <h1 class="header__title"><a href="<?php echo url('en/'); ?>"><img src="<?php echo IMAGES_PATH; ?>/IBS_logo.png" alt="Logo IBS Lab - Innovative Banking Solutions" class="header__logo" tabindex="0" width="200" height="80" fetchpriority="high" decoding="sync"></a></h1>
       
       <!-- Hamburger Button per Mobile -->
       <button class="header__hamburger" aria-label="Apri menu di navigazione" aria-expanded="false" tabindex="0">
