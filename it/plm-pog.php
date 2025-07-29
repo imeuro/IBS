@@ -51,7 +51,7 @@
         <div class="section__partner">
             <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Visita il sito di Kore Labs"><img src="<?php echo IMAGES_PATH; ?>/kore_logo.svg" alt="Logo Kore Labs - Partner tecnologico" class="section__partner-logo" width="150" height="60" loading="lazy" decoding="async"></a>
             
-            <p>Come <strong>partner di riferimento di <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORElabs</a></strong> ed esperti della piattaforma <strong><a href="https://korelabs.co/kore-prm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> per la gestione del ciclo di vita dei prodotti (Product Lifecycle Management)</strong>, offriamo attività di configurazione e migrazione, con particolare attenzione all'ottimizzazione del tempi di realizzo e dell'investimento economico.</p>
+            <p>Come <strong>partner di riferimento di <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORE Labs</a></strong> ed esperti della piattaforma <strong><a href="https://korelabs.co/kore-prm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> per la gestione del ciclo di vita dei prodotti (Product Lifecycle Management)</strong>, offriamo attività di configurazione e migrazione, con particolare attenzione all'ottimizzazione del tempi di realizzo e dell'investimento economico.</p>
         </div>
     </section>
 

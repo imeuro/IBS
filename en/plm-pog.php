@@ -57,7 +57,7 @@
         <div class="section__partner">
             <a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Visita il sito di Kore Labs"><img src="<?php echo IMAGES_PATH; ?>/kore_logo.svg" alt="Logo Kore Labs - Partner tecnologico" class="section__partner-logo" width="150" height="60" loading="lazy" decoding="async"></a>
             
-            <p>As a reference partner of <strong><a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORElabs</a></strong> and expert in the <strong><a href="https://korelabs.co/kore-prm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> platform for Product Lifecycle Management</strong>, we offer configuration and migration activities, with a focus on optimising time-to-market and economic investment</p>
+            <p>As a reference partner of <strong><a href="https://korelabs.co/" target="_blank" rel="noopener noreferrer" title="Kore Labs - Product Lifecycle Management">KORE Labs</a></strong> and expert in the <strong><a href="https://korelabs.co/kore-prm/" target="_blank" rel="noopener noreferrer" title="KorePRM - Product Lifecycle Management">KorePRM®</a> platform for Product Lifecycle Management</strong>, we offer configuration and migration activities, with a focus on optimising time-to-market and economic investment</p>
         </div>
     </section>
 
