@@ -71,7 +71,7 @@
             </li>
             <li class="people-name">
               <h3>Luca Sesini</h3>
-              <p>Founding Partner & CEO<br><a href="mailto:luca.sesini@ibslab.eu">luca.sesini@ibslab.eu</a></p>
+              <p>Founding Partner<br><a href="mailto:luca.sesini@ibslab.eu">luca.sesini@ibslab.eu</a></p>
             </li>
           </ul>
           <ul class="IBS-people-card">
@@ -81,7 +81,7 @@
             </li>
             <li class="people-name">
               <h3>Antonio Attanasio</h3>
-              <p>Founding Partner & Sales Director<br><a href="mailto:antonio.attanasio@ibslab.eu">antonio.attanasio@ibslab.eu</a></p>
+              <p>Founding Partner & CEO<br><a href="mailto:antonio.attanasio@ibslab.eu">antonio.attanasio@ibslab.eu</a></p>
             </li>
           </ul>
       </div>
