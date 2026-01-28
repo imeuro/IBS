@@ -66,22 +66,22 @@
       <div class="IBS-people">
           <ul class="IBS-people-card">
             <li class="people-pics">
-              <img src="<?php echo IMAGES_PATH; ?>/people/luca-sesini.jpeg" alt="Luca Sesini">
-              <img src="<?php echo IMAGES_PATH; ?>/people/luca-sesini-qr.png" alt="Luca Sesini">
-            </li>
-            <li class="people-name">
-              <h3>Luca Sesini</h3>
-              <p>Founding Partner<br><a href="mailto:luca.sesini@ibslab.eu">luca.sesini@ibslab.eu</a></p>
-            </li>
-          </ul>
-          <ul class="IBS-people-card">
-            <li class="people-pics">
               <img src="<?php echo IMAGES_PATH; ?>/people/antonio-attanasio.jpeg" alt="Antonio Attanasio">
               <img src="<?php echo IMAGES_PATH; ?>/people/antonio-attanasio-qr.png" alt="Antonio Attanasio">
             </li>
             <li class="people-name">
               <h3>Antonio Attanasio</h3>
               <p>Founding Partner & CEO<br><a href="mailto:antonio.attanasio@ibslab.eu">antonio.attanasio@ibslab.eu</a></p>
+            </li>
+          </ul>
+          <ul class="IBS-people-card">
+            <li class="people-pics">
+              <img src="<?php echo IMAGES_PATH; ?>/people/luca-sesini.jpeg" alt="Luca Sesini">
+              <img src="<?php echo IMAGES_PATH; ?>/people/luca-sesini-qr.png" alt="Luca Sesini">
+            </li>
+            <li class="people-name">
+              <h3>Luca Sesini</h3>
+              <p>Founding Partner<br><a href="mailto:luca.sesini@ibslab.eu">luca.sesini@ibslab.eu</a></p>
             </li>
           </ul>
       </div>
