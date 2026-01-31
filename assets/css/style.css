@@ -657,6 +657,22 @@ body {
   display: inline-block;
 }
 
+/* Sottoliste nelle sezioni (es. Compliance Finanziaria) */
+.section__list--nested {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+.section__list--nested li {
+  padding-top: 0.5rem;
+}
+
+.section__list--nested li::before {
+  width: 0.4rem;
+  height: 0.4rem;
+  top: 1.1rem;
+}
+
 @media (min-width: 768px) {
   .hero {
     height: 100dvh;

@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>IBS Lab - Innovative Banking Solutions | Consulenza Finanziaria e Product Management</title>
-  <meta name="description" content="IBS Lab offre soluzioni innovative per la gestione del ciclo di vita dei prodotti finanziari. Partner ufficiale di Kore Labs in Italia, Svizzera e Spagna per Product Lifecycle Management.">
-  <meta name="keywords" content="banking solutions, product management, POG, product oversight governance, kore labs, consulenza finanziaria, lifecycle management, compliance bancaria">
+  <title>IBS Lab - Innovative Banking Solutions | Financial Consulting and Product Management</title>
+  <meta name="description" content="IBS Lab offers innovative solutions for managing the lifecycle of financial products. Official partner of Kore Labs in Italy, Switzerland and Spain for Product Lifecycle Management.">
+  <meta name="keywords" content="banking solutions, product management, POG, product oversight governance, kore labs, financial consulting, lifecycle management, banking compliance">
   <meta name="author" content="IBS Lab S.r.l.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
-  
+  <meta name="googlebot" content="index, follow">
+
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.ibslab.eu/">
   

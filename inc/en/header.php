@@ -22,6 +22,7 @@
             <a href="#solutions" tabindex="0">Solutions</a>
             <ul class="nav__submenu">
               <li><a href="<?php echo url('en/value-proposition'); ?>" tabindex="0">Value Proposition</a></li>
+              <li><a href="<?php echo url('en/compliance-finanziaria'); ?>" tabindex="0">Financial Compliance</a></li>
               <li><a href="<?php echo url('en/plm-pog'); ?>" tabindex="0">PLM | POG</a></li>
             </ul>
           </li>
