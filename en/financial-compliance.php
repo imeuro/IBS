@@ -14,11 +14,11 @@
   <meta name="googlebot" content="index, follow">
   
   <!-- Canonical URL -->
-  <link rel="canonical" href="<?php echo absoluteUrl('en/compliance-finanziaria'); ?>">
+  <link rel="canonical" href="<?php echo absoluteUrl('en/financial-compliance'); ?>">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="<?php echo absoluteUrl('en/compliance-finanziaria'); ?>">
+  <meta property="og:url" content="<?php echo absoluteUrl('en/financial-compliance'); ?>">
   <meta property="og:title" content="IBS Lab - Financial Compliance">
   <meta property="og:description" content="Operational support and consulting on European and American regulations. Integrated Compliance Framework for the full compliance lifecycle.">
   <meta property="og:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
@@ -27,7 +27,7 @@
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="<?php echo absoluteUrl('en/compliance-finanziaria'); ?>">
+  <meta name="twitter:url" content="<?php echo absoluteUrl('en/financial-compliance'); ?>">
   <meta name="twitter:title" content="IBS Lab - Financial Compliance">
   <meta name="twitter:description" content="Operational support and consulting on European and American regulations. Integrated Compliance Framework.">
   <meta name="twitter:image" content="<?php echo absoluteUrl(IMAGES_PATH . '/IBS_logo.png'); ?>">
@@ -35,13 +35,13 @@
   <link rel="preload" as="image" href="<?php echo IMAGES_PATH; ?>/IBS_logo.png" fetchpriority="high">
   <?php include INCLUDES_PATH . '/en/head.php'; ?>
 </head>
-<body class="page" data-page="compliance-finanziaria">
+<body class="page" data-page="financial-compliance">
   
   <?php include INCLUDES_PATH . '/en/header.php'; ?>
 
   <main>
-    <section id="compliance-finanziaria" class="section section--light" aria-labelledby="compliance-finanziaria-heading">
-      <h1 id="compliance-finanziaria-heading" class="section__title">Financial Compliance</h1>
+    <section id="financial-compliance" class="section section--light" aria-labelledby="financial-compliance-heading">
+      <h1 id="financial-compliance-heading" class="section__title">Financial Compliance</h1>
 
       <hr class="ibs__divider" />
       
