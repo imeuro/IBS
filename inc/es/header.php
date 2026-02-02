@@ -22,7 +22,7 @@
             <a href="#soluzioni" tabindex="0">soluciones</a>
             <ul class="nav__submenu">
               <li><a href="<?php echo url('es/value-proposition'); ?>" tabindex="0">Propuesta de valor</a></li>
-              <li><a href="<?php echo url('es/cumplimiento-financiero'); ?>" tabindex="0">Cumplimiento Financiero</a></li>
+              <!-- <li><a href="<?php echo url('es/cumplimiento-financiero'); ?>" tabindex="0">Cumplimiento Financiero</a></li> -->
               <li><a href="<?php echo url('es/plm-pog'); ?>" tabindex="0">PLM | POG</a></li>
             </ul>
           </li>
