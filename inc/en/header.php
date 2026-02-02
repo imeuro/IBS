@@ -22,13 +22,10 @@
             <a href="#solutions" tabindex="0">Solutions</a>
             <ul class="nav__submenu">
               <li><a href="<?php echo url('en/value-proposition'); ?>" tabindex="0">Value Proposition</a></li>
-              <li><a href="<?php echo url('en/financial-compliance'); ?>" tabindex="0">Financial Compliance</a></li>
+              <!-- <li><a href="<?php echo url('en/financial-compliance'); ?>" tabindex="0">Financial Compliance</a></li> -->
               <li><a href="<?php echo url('en/plm-pog'); ?>" tabindex="0">PLM | POG</a></li>
             </ul>
           </li>
-          <!-- <li class="nav__item">
-            <a href="<?php // echo url('en/mercati'); ?>" tabindex="0">mercati</a>
-          </li> -->
           <li class="nav__item has-submenu">
             <a href="#chi-siamo" tabindex="0">About</a>
             <ul class="nav__submenu">

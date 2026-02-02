@@ -26,9 +26,6 @@
               <li><a href="<?php echo url('es/plm-pog'); ?>" tabindex="0">PLM | POG</a></li>
             </ul>
           </li>
-          <!-- <li class="nav__item">
-            <a href="<?php // echo url('es/mercati'); ?>" tabindex="0">mercati</a>
-          </li> -->
           <li class="nav__item has-submenu">
             <a href="#chi-siamo" tabindex="0">quiénes somos</a>
             <ul class="nav__submenu">
