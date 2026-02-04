@@ -44,8 +44,6 @@
       <h1 id="cumplimiento-financiero-heading" class="section__title">Cumplimiento Financiero</h1>
 
       <hr class="ibs__divider" />
-      
-      <p>Ofrecemos soporte operativo y consultoría específica sobre normativas europeas y americanas, con un modelo de Compliance Framework integrado que cubre todo el ciclo de vida del cumplimiento normativo.</p>
 
       <ul class="section__list">
         <li>

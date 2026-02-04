@@ -44,8 +44,6 @@
       <h1 id="financial-compliance-heading" class="section__title">Financial Compliance</h1>
 
       <hr class="ibs__divider" />
-      
-      <p>We provide operational support and specific consulting on European and American regulations, with an integrated Compliance Framework model that covers the full regulatory compliance lifecycle.</p>
 
       <ul class="section__list">
         <li>

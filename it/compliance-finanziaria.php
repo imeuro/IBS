@@ -45,8 +45,6 @@
 
       <hr class="ibs__divider" />
       
-      <p>Forniamo supporto operativo e consulenza specifica sulle normative europee ed americane, con un modello di Compliance Framework integrato che copre l'intero ciclo di vita della compliance normativa.</p>
-
       <ul class="section__list">
         <li>
           <strong class="section__list-title">Supporto normativo europeo e americano</strong>
